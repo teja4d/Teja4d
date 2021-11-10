@@ -6,7 +6,7 @@ import './SocialIcons.css'
 export default function SocialIcons() {
     const icons = [faFacebook,faLinkedin,faGithub,faTwitter]
     const IconClicked = ()=>{
-        navigator.vibrate(100);
+        navigator.vibrate(80);
         
     }
     return (
