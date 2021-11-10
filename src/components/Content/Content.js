@@ -12,7 +12,6 @@ export default function Content() {
 
     return (
         <div>
-            <h1 className="content-title">Hello! I'm TEJA</h1>
            <h2 className="content-items"><Typical steps={steps} loop={Infinity}/></h2>
         </div>
     )

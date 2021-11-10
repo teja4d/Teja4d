@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 48px;
+    padding-top: 48px;
 }
 
 .image-box{
@@ -20,8 +20,9 @@
 .image-box::before{
 content:'';
 position:absolute;
-width: 340px;
+width: 300px;
 height: 140%;
+filter: blur(32px);
 background: linear-gradient( 90deg,
 rgba(255, 0, 0, 1) 0%,
 rgba(255, 154, 0, 1) 10%,
@@ -39,10 +40,12 @@ animation: animate 5s linear infinite alternate;
 .image-box::after{
     content: "";
     position: absolute;
+    
     inset:6px;
-    background:url('../../assets/Teja_avatar.jpeg');
-    background-size: 225px 250px;
-    border-radius: 10px;
+    background:url('../../assets/image.jpeg');
+    background-size: 225px 230px;
+   
+    
 }
 @keyframes animate{
     0%{
