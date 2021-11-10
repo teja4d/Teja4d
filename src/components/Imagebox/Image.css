@@ -1,0 +1,54 @@
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+}
+
+.image-box{
+    position: relative;
+    width:240px;
+    height:240px;
+    box-shadow: 0 20px 35px rgba(0, 0,0, 0.3);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+.image-box::before{
+content:'';
+position:absolute;
+width: 340px;
+height: 140%;
+background: linear-gradient( 90deg,
+rgba(255, 0, 0, 1) 0%,
+rgba(255, 154, 0, 1) 10%,
+rgba(208, 222, 33, 1) 20%,
+rgba(79, 220, 74, 1) 30%,
+rgba(63, 218, 216, 1) 40%,
+rgba(47, 201, 226, 1) 50%,
+rgba(28, 127, 238, 1) 60%,
+rgba(95, 21, 242, 1) 70%,
+rgba(186, 12, 248, 1) 80%,
+rgba(251, 7, 217, 1) 90%,
+rgba(255, 0, 0, 1) 100%);
+animation: animate 5s linear infinite alternate;
+}
+.image-box::after{
+    content: "";
+    position: absolute;
+    inset:6px;
+    background:url('../../assets/Teja_avatar.jpeg');
+    background-size: 225px 250px;
+    border-radius: 10px;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(350deg);
+    }
+}

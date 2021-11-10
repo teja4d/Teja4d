@@ -1,0 +1,25 @@
+.lists{
+    list-style-type: none;
+    margin:20px;
+    padding: 0%;
+}
+.list-items {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    transition: 0.4s ease-in-out;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.list-items::before,
+.list-items::after{
+    background-color: #96ccff;
+    z-index: -1;
+}
+
+
+.list-items:hover{
+    background: #96ccff;
+    box-shadow: 0 0 5px #96ccff,0 0 25px #96ccff,0 0 25px #96ccff,0 0 5px #96ccff;
+}
