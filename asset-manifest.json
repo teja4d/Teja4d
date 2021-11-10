@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.45fefd41.chunk.css",
-    "main.js": "/portfolio/static/js/main.3c6a2f76.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.3c6a2f76.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.cd2a1cac.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.cd2a1cac.js.map",
-    "static/js/2.a8b54a65.chunk.js": "/portfolio/static/js/2.a8b54a65.chunk.js",
-    "static/js/2.a8b54a65.chunk.js.map": "/portfolio/static/js/2.a8b54a65.chunk.js.map",
-    "static/js/3.774451f2.chunk.js": "/portfolio/static/js/3.774451f2.chunk.js",
-    "static/js/3.774451f2.chunk.js.map": "/portfolio/static/js/3.774451f2.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "static/css/main.45fefd41.chunk.css.map": "/portfolio/static/css/main.45fefd41.chunk.css.map",
-    "static/js/2.a8b54a65.chunk.js.LICENSE.txt": "/portfolio/static/js/2.a8b54a65.chunk.js.LICENSE.txt",
-    "static/media/Image.css": "/portfolio/static/media/Teja_avatar.bdee8f11.jpeg",
-    "static/media/logo.d47512f5.gif": "/portfolio/static/media/logo.d47512f5.gif"
+    "main.css": "/mydata/static/css/main.3afb4474.chunk.css",
+    "main.js": "/mydata/static/js/main.3c6a2f76.chunk.js",
+    "main.js.map": "/mydata/static/js/main.3c6a2f76.chunk.js.map",
+    "runtime-main.js": "/mydata/static/js/runtime-main.287bd7fd.js",
+    "runtime-main.js.map": "/mydata/static/js/runtime-main.287bd7fd.js.map",
+    "static/js/2.a8b54a65.chunk.js": "/mydata/static/js/2.a8b54a65.chunk.js",
+    "static/js/2.a8b54a65.chunk.js.map": "/mydata/static/js/2.a8b54a65.chunk.js.map",
+    "static/js/3.774451f2.chunk.js": "/mydata/static/js/3.774451f2.chunk.js",
+    "static/js/3.774451f2.chunk.js.map": "/mydata/static/js/3.774451f2.chunk.js.map",
+    "index.html": "/mydata/index.html",
+    "static/css/main.3afb4474.chunk.css.map": "/mydata/static/css/main.3afb4474.chunk.css.map",
+    "static/js/2.a8b54a65.chunk.js.LICENSE.txt": "/mydata/static/js/2.a8b54a65.chunk.js.LICENSE.txt",
+    "static/media/Image.css": "/mydata/static/media/Teja_avatar.bdee8f11.jpeg",
+    "static/media/logo.d47512f5.gif": "/mydata/static/media/logo.d47512f5.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.cd2a1cac.js",
+    "static/js/runtime-main.287bd7fd.js",
     "static/js/2.a8b54a65.chunk.js",
-    "static/css/main.45fefd41.chunk.css",
+    "static/css/main.3afb4474.chunk.css",
     "static/js/main.3c6a2f76.chunk.js"
   ]
 }
