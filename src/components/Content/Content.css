@@ -1,7 +1,19 @@
 
-.content-items {
-    font-size: 32px;
-    background-image: linear-gradient(#250a0a,#e7302a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+.welcome-text {
+  font-family:"Courier";
+  font-size: 32px;
+  color: cornflowerblue;
+}
+
+.typer-text-start{
+  color: rgb(235, 73, 51);
+  size: 24px;
+  font-family: 'Courier';
+}
+
+.typer-text-end{
+  color: rgb(51, 235, 66);
+  size: 24px;
+  font-family: 'Courier';
 }

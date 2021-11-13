@@ -1,10 +1,10 @@
 .App {
   text-align: center;
-  background-image: linear-gradient(to bottom,#1d5552 , #83e1e2);
+  background-image: linear-gradient(to bottom,#1a1f1e , #131b1b);
   min-height: 100vh;
 }
 .content-title{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: rgb(22, 18, 13);
+  font-family: 'Courier';
+  color:rgb(31, 182, 44);
   font-size: 32px;
 }

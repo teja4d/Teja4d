@@ -5,6 +5,7 @@
 }
 .list-items {
     display: inline-block;
+    color: #ffff;
     margin: 0 10px;
     padding: 10px;
     transition: 0.4s ease-in-out;

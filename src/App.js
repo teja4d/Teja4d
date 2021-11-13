@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Router>
       <Image/>
-      <h4 className="content-title">Hello! I'm TEJA</h4>
+      <h4 className="content-title">--DharmaTeja--</h4>
       <SocialIcons/>
       <Content></Content>
       </Router>

@@ -1,18 +1,23 @@
 import React from 'react';
-import Typical from 'react-typical';
+import Typist from 'react-typist';
 
 import './Content.css'
 
 export default function Content() {
 
     const steps = [
-        "A Junior Web Developer",3000,
-        "Welcome to My Digital Garden",2000
+        "A Junior Web Developer",3000
     ]
 
     return (
         <div>
-           <h2 className="content-items"><Typical steps={steps} loop={Infinity}/></h2>
+            <Typist avgTypingDelay={90}>
+            <h1 className='welcome-text'>Welcome to My Digital Garden</h1>
+            <h1 className='typer-text-start' >I'm a Student</h1>
+            <Typist.Backspace className='flash' count={13} delay={400}>
+            </Typist.Backspace>
+            <h1 className='typer-text-end'>I ❤️ Programming</h1>
+            </Typist>
         </div>
     )
 }
