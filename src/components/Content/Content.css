@@ -17,3 +17,25 @@
   size: 24px;
   font-family: 'Courier';
 }
+
+@media screen and (max-width: 480px){
+
+  typer-text-end{
+    color: rgb(51, 235, 66);
+    size: 18px;
+    font-family: 'Courier';
+  }
+
+.welcome-text {
+  font-family:"Courier";
+  font-size: 20px;
+  color: cornflowerblue;
+}
+
+.typer-text-start{
+  color: rgb(235, 73, 51);
+  size: 18px;
+  font-family: 'Courier';
+}
+  
+}
