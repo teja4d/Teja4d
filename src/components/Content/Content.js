@@ -1,6 +1,6 @@
 import React from 'react';
 import Typist from 'react-typist';
-
+import GIF from '../../assets/attachment.gif'
 import './Content.css'
 
 export default function Content() {

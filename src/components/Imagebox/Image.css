@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 48px;
+    padding-top: 16px;
 }
 
 .image-box{
@@ -15,7 +15,8 @@
     justify-content: center;
     align-items: center;
     background: rgba(0,0,0,0.5);
-    border-radius: 10px;
+    border-radius: 45%;
+    transform: rotate(45deg);
 }
 .image-box::before{
 content:'';
@@ -35,16 +36,18 @@ rgba(95, 21, 242, 1) 70%,
 rgba(186, 12, 248, 1) 80%,
 rgba(251, 7, 217, 1) 90%,
 rgba(255, 0, 0, 1) 100%);
-animation: animate 5s linear infinite alternate;
+animation: animate 5s linear infinite;
 }
 .image-box::after{
     content: "";
     position: absolute;
-    
     inset:6px;
     background:url('../../assets/image.jpeg');
-    background-size: 225px 230px;
-   
+    background-size: 230px 230px;
+    background-repeat: no-repeat;
+    text-align: center;
+    transform: rotate(-45deg);
+    border-radius: 50%;
     
 }
 @keyframes animate{
