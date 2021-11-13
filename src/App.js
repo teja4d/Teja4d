@@ -9,11 +9,12 @@ import {BrowserRouter as Router } from 'react-router-dom'
 
 
 function App() {
+
   return (
     <div className="App">
       <Router>
       <Image/>
-      <AnimatedCursor outerSize={24} innersize={12} outerScale={1.5} color='51, 235, 66'/>
+      {window.innerWidth>480 ?<AnimatedCursor outerSize={24} innersize={12} outerScale={1.5} color='51, 235, 66'/>: null}
       <h4 className="content-title">--DharmaTeja Vytla--</h4>
       <h4 className='support-letter'>as</h4>
       <h4 className='nick-name'>Teja4D</h4>
