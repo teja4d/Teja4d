@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 16px;
+    padding-top: 32px;
 }
 
 .image-box{
@@ -17,6 +17,7 @@
     background: rgba(0,0,0,0.5);
     border-radius: 45%;
     transform: rotate(45deg);
+    
 }
 .image-box::before{
 content:'';
@@ -37,6 +38,7 @@ rgba(186, 12, 248, 1) 80%,
 rgba(251, 7, 217, 1) 90%,
 rgba(255, 0, 0, 1) 100%);
 animation: animate 5s linear infinite;
+border-radius: 50%;
 }
 .image-box::after{
     content: "";
