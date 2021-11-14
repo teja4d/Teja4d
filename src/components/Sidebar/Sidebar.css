@@ -3,28 +3,35 @@
     width: 240px;
     min-height: 100vh;
     position: fixed;
+    z-index: 2;
 }
 
 .sidebar-list{
     height: 100%;
     width: 100%;
     padding: 0;
+    margin-top: 64px;
 }
 
 .sidebar-item{
     display: flex;
     height: 40px;
     width: 100%;
-    margin-top: 24px;
-    border-bottom: 1px solid black;
-    align-items: center;
-    justify-content: center;
+    
+    align-self: flex-start;
+    padding-top: 20px;
+    margin-left: 20px;
    
 }
 .sidebar-icon{
-    margin-right: 5px;
+    margin-right: 24px;
     font-size: 30px;
 }
 .sidebar-title{
-    font-size: 24px;
+    font-size: 18px;
+    font-family:'Courier';
+    color: rgb(167, 33, 16);
+    font-weight: 600;
+    text-align: center;
+    padding-top: 6px;
 }

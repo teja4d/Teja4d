@@ -5,9 +5,12 @@
     background-color: rgb(140, 250, 89);
     border-radius: 2px;
     animation: menubar 3s linear infinite ;
+    
 }
 .menu{
    padding: 8px;
+   position: fixed;
+   z-index: 3;
 }
 
 @keyframes menubar {
