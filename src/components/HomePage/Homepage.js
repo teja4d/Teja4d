@@ -7,11 +7,11 @@ import SocialIcons from '../socialicons/SocialIcons';
 
 
 
-export default function HomePage() {
+export default function HomePage({itemClicked}) {
   
   return (
       <>
-    <div className="home-page">
+    <div className="home-page" onClick={itemClicked}>
       
       <div className='home-wrapper'>
       <Image/>

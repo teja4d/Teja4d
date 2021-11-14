@@ -29,7 +29,7 @@ export default function App() {
      <Menubar menuClicked={menuClicked}/>
       <Routes>
        
-      <Route path='/' element={<HomePage/>}/>
+      <Route path='/' element={<HomePage itemClicked={clickedOutside}/>}/>
       <Route path='/home' element={<HomePage itemClicked={clickedOutside}/>} />
       <Route path='about'  element={<About itemClicked={clickedOutside}/>}></Route>
       <Route path='education' element={<Education itemClicked={clickedOutside}/>}></Route>
