@@ -1,9 +1,10 @@
 .side-bar {
-    background:linear-gradient(to bottom, rgb(47, 154, 255),rgb(50, 196, 37),rgb(247, 125, 54));
-    width: 240px;
+    background:linear-gradient(to bottom,#2f3a38 , #3c4747);
+    width: auto;
     min-height: 100vh;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
+    top:0;
 }
 
 .sidebar-list{
@@ -17,7 +18,7 @@
     display: flex;
     height: 40px;
     width: 100%;
-    
+    text-decoration: none;
     align-self: flex-start;
     padding-top: 20px;
     margin-left: 20px;
@@ -25,13 +26,14 @@
 }
 .sidebar-icon{
     margin-right: 24px;
-    font-size: 30px;
+    font-size: 28px;
 }
 .sidebar-title{
     font-size: 18px;
     font-family:'Courier';
-    color: rgb(167, 33, 16);
-    font-weight: 600;
+    color: rgb(51, 235, 66);
+    font-weight:bold;
     text-align: center;
     padding-top: 6px;
+    margin-right: 32px;
 }

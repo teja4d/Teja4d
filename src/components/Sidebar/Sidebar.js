@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 //import {ProSidebar,Menu,MenuItem} from 'react-pro-sidebar';
 import 'react-pro-sidebar/dist/css/styles.css';
 import { SidebarData } from './SidebarData';
-import {AiFillHome} from 'react-icons/ai'
+import {IconContext } from 'react-icons';
 import './Sidebar.css'
 
 export default function Sidebar({showTitle}) {
@@ -11,10 +12,12 @@ export default function Sidebar({showTitle}) {
         <div className='side-bar'>
             <ul className='sidebar-list'>
             {SidebarData.map((item,index)=>(
-                <li key={index} className='sidebar-item'>
+                <Link to={item.path}  key={index} className='sidebar-item'>
+                    <IconContext.Provider value={{color:"rgb(247, 73, 51)"}}>
                     <div className='sidebar-icon'>{item.icon}</div>
-                    <div className='sidebar-title'>{item.tittle}</div>
-                </li>
+                    </IconContext.Provider>
+                  {showTitle ? <div className='sidebar-title'>{item.tittle}</div> : null}
+                </Link>
             ))}
             </ul>
         </div>
