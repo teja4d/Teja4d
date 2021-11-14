@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import { HashRouter as Router,Routes,Route, HashRouter} from 'react-router-dom';
 import AnimatedCursor from 'react-animated-cursor';
 import About from './Pages/About';
 import Menubar from './components/Menubars/Menubar';
@@ -23,6 +23,7 @@ export default function App() {
   }
     return (
       <>
+      
      <Router>
      {window.innerWidth>480 || isClicked ? <Sidebar showTitle={isClicked}/> : null}
      <Menubar menuClicked={menuClicked}/>
@@ -38,6 +39,7 @@ export default function App() {
       <Route path='projects' element={<Projects itemClicked={clickedOutside}></Projects>}></Route>
       </Routes>
     </Router>
+    
     </>
     )
 }
