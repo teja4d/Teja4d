@@ -25,7 +25,6 @@ export default function App() {
       <>
      <Router>
      {window.innerWidth>480 || isClicked ? <Sidebar showTitle={isClicked}/> : null}
-     {window.innerWidth>480 ?<AnimatedCursor outerSize={24} innersize={12} outerScale={1.5} color='51, 235, 66'/>: null}
      <Menubar menuClicked={menuClicked}/>
       <Routes>
        
