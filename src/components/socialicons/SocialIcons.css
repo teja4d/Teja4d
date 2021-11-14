@@ -9,14 +9,14 @@
     margin: 0 10px;
     padding: 10px;
     transition: 0.4s ease-in-out;
-    z-index: 1;
+   
     border-radius: 50%;
 }
 
 .list-items::before,
 .list-items::after{
     background-color: #7bf17b;
-    z-index: -1;
+    
 }
 
 

@@ -14,15 +14,14 @@ function App() {
   return (
     <div className="App">
       <Router>
+      {window.innerWidth>480 ?<AnimatedCursor outerSize={24} innersize={12} outerScale={1.5} color='51, 235, 66'/>: null}
       <Menubar/>
       <Image/>
-      {window.innerWidth>480 ?<AnimatedCursor outerSize={24} innersize={12} outerScale={1.5} color='51, 235, 66'/>: null}
       <h4 className="content-title">--Dharma Teja Vytla--</h4>
       <h4 className='support-letter'>as</h4>
       <h4 className='nick-name'>Teja4D</h4>
       <SocialIcons/>
       <Content></Content>
-     
       </Router>
     </div>
   );

@@ -5,20 +5,20 @@
     background-color: rgb(140, 250, 89);
     border-radius: 2px;
     animation: menubar 3s linear infinite ;
+    transition: 0.1s ease-out;
 }
 .menu{
-   padding: 8px;
-}
-
-@keyframes menubar {
-    0%{width:32px;background-color:greenyellow };
-
-    25%{width:40px;background-color: red;}
-
-    50%{width:32px;background-color:rgb(36, 36, 233)};
-
-    75%{width:40px;background-color:red};
-
+   padding-left: 8px;
+   
    
 }
 
+@keyframes menubar {
+    0%{background-color:greenyellow;transform: scaleX(1);transform-origin: center; }
+
+    25%{background-color: red;transform: scaleX(1.2);transform-origin: center;}
+
+    50%{background-color:rgb(36, 36, 233);transform: scaleX(1);transform-origin: center;}
+
+    75%{background-color:red;transform: scaleX(1.2);transform-origin: center;}
+}

@@ -1,0 +1,30 @@
+.side-bar {
+    background:linear-gradient(to bottom, rgb(47, 154, 255),rgb(50, 196, 37),rgb(247, 125, 54));
+    width: 240px;
+    height: 100vh;
+    left: 0;
+}
+
+.sidebar-list{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+.sidebar-item{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    margin-top: 24px;
+    border-bottom: 1px solid black;
+    align-items: center;
+    justify-content: center;
+   
+}
+.sidebar-icon{
+    margin-right: 5px;
+    font-size: 30px;
+}
+.sidebar-title{
+    font-size: 24px;
+}
