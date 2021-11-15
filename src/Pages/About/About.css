@@ -1,0 +1,42 @@
+.about-container{
+    position: absolute;
+    height: 100vh;
+    background:linear-gradient(to bottom,#1a1f1e , #131b1b) ;
+    padding: 32px 300px ;
+    overflow: hidden;
+}
+.about-wrapper{
+    margin: 0 auto;
+    background: linear-gradient(to bottom,#293533 , #283b3b);
+    text-align: center;
+    border-radius: 10px;
+    padding:8px 16px;
+    position: relative;
+}
+.about-title{
+    font-family: 'Courier';
+    font-size: 32px;
+    color: rgb(28, 85, 241);
+    text-align: center;
+}
+
+.about-text{
+    font-family: 'Courier';
+    font-size: 18px;
+    color: rgb(51, 235, 66);
+    font-weight: 900;
+    text-align:justify;
+}
+.about-text span,.about-fav span{
+    font-family:'Courier';
+    color: rgb(226, 62, 33);
+    font-style: italic;
+    font-weight: bold;
+}
+.about-fav{
+    font-family: 'Courier';
+    font-size: 18px;
+    color: rgb(51, 235, 66);
+    font-weight: 900;
+    text-align:center;
+}

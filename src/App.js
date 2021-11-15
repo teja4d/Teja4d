@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import { HashRouter as Router,Routes,Route, HashRouter} from 'react-router-dom';
 import AnimatedCursor from 'react-animated-cursor';
-import About from './Pages/About';
+import About from './Pages/About/About';
 import Menubar from './components/Menubars/Menubar';
 import Education from './Pages/Education';
 import Experience from './Pages/Experience';
@@ -22,11 +22,15 @@ export default function App() {
     setClicked(false)
   }
     return (
-      <>
+      
       
      <Router>
+       <div style={{position:'relative'}}>
+      <div>
      {window.innerWidth>480 || isClicked ? <Sidebar showTitle={isClicked}/> : null}
      <Menubar menuClicked={menuClicked}/>
+     </div>
+     <div>
       <Routes>
        
       <Route path='/' element={<HomePage itemClicked={clickedOutside}/>}/>
@@ -37,9 +41,12 @@ export default function App() {
       <Route path='skills' element={<Skills itemClicked={clickedOutside}/>}></Route>
       <Route path='aboutyou' element={<AboutYou itemClicked={clickedOutside}/>}></Route>
       <Route path='projects' element={<Projects itemClicked={clickedOutside}></Projects>}></Route>
+      
       </Routes>
+      </div>
+      </div>
     </Router>
     
-    </>
+   
     )
 }
