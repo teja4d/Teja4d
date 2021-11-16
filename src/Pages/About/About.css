@@ -1,5 +1,5 @@
 .about-container{
-    min-height:100vmin;
+    height:100vh;
     background:linear-gradient(to bottom,#1a1f1e , #131b1b) ;
     padding: 90px 300px ;
     
