@@ -29,7 +29,7 @@
 }
 .sidebar-item:hover{
     background: linear-gradient(to bottom,#415a55 , #415c5c);
-    border-radius: 12px;
+    border-radius: 8px;
 }
 .sidebar-icon{
     padding: 0 18px;

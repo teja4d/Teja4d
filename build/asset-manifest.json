@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.56096ddc.chunk.css",
+    "main.css": "/static/css/main.239e17d9.chunk.css",
     "main.js": "/static/js/main.a2dda45c.chunk.js",
     "main.js.map": "/static/js/main.a2dda45c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fefcdc59.js",
@@ -10,7 +10,7 @@
     "static/js/3.9a311559.chunk.js": "/static/js/3.9a311559.chunk.js",
     "static/js/3.9a311559.chunk.js.map": "/static/js/3.9a311559.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.56096ddc.chunk.css.map": "/static/css/main.56096ddc.chunk.css.map",
+    "static/css/main.239e17d9.chunk.css.map": "/static/css/main.239e17d9.chunk.css.map",
     "static/js/2.dbf7c066.chunk.js.LICENSE.txt": "/static/js/2.dbf7c066.chunk.js.LICENSE.txt",
     "static/media/Teja_avatar.bdee8f11.jpeg": "/static/media/Teja_avatar.bdee8f11.jpeg",
     "static/media/attachment.312454d8.gif": "/static/media/attachment.312454d8.gif",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.fefcdc59.js",
     "static/js/2.dbf7c066.chunk.js",
-    "static/css/main.56096ddc.chunk.css",
+    "static/css/main.239e17d9.chunk.css",
     "static/js/main.a2dda45c.chunk.js"
   ]
 }
