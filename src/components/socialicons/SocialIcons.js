@@ -17,7 +17,7 @@ export default function SocialIcons() {
         },
         {
             "icon":faGithub,
-            "url":"https://github.com/Teja6d"
+            "url":"https://github.com/Teja4d"
         },
         {
             "icon":faTwitterSquare,

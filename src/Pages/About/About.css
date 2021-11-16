@@ -1,9 +1,8 @@
 .about-container{
-    position: absolute;
-    height: 100vh;
+    min-height:100vmin;
     background:linear-gradient(to bottom,#1a1f1e , #131b1b) ;
     padding: 90px 300px ;
-    overflow: hidden;
+    
 }
 .about-wrapper{
     margin: 0 auto;
@@ -11,7 +10,7 @@
     text-align: center;
     border-radius: 10px;
     padding:8px 16px;
-    position: relative;
+   height: auto;
 }
 .about-title{
     font-family: 'Courier';
@@ -25,7 +24,7 @@
     font-size: 18px;
     color: rgb(51, 235, 66);
     font-weight: 900;
-    text-align:justify;
+    text-align:start;
 }
 .about-text span,.about-fav span{
     font-family:'Courier';

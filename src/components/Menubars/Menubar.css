@@ -9,7 +9,7 @@
 }
 .menu{
    padding-top: 18px;
-   position: absolute;
+   position:fixed;
    z-index: 3;
    padding-left: 18px;
 }

@@ -1,16 +1,10 @@
 import React,{useState} from 'react';
-import { HashRouter as Router,Routes,Route, HashRouter} from 'react-router-dom';
+import { HashRouter as Router} from 'react-router-dom';
 import AnimatedCursor from 'react-animated-cursor';
-import About from './Pages/About/About';
 import Menubar from './components/Menubars/Menubar';
-import Education from './Pages/Education';
-import Experience from './Pages/Experience';
-import Skills from './Pages/Skills';
-import AboutYou from './Pages/AboutYou';
-import HomePage from './components/HomePage/Homepage';
 import Sidebar from './components/Sidebar/Sidebar';
-import { SidebarData } from './components/Sidebar/SidebarData';
-import Projects from './Pages/Projects';
+import PageRoutes from './Routes/Routes';
+import './App.css'
 export default function App() {
 
   const [isClicked,setClicked] = useState(false)
@@ -25,24 +19,19 @@ export default function App() {
       
       
      <Router>
+       <AnimatedCursor innerSize={12}
+      outerSize={12}
+      color='247, 73, 51'
+      outerAlpha={0.2}
+      innerScale={0.7}
+      outerScale={3}/>
        <div style={{position:'relative'}}>
       <div>
      {window.innerWidth>480 || isClicked ? <Sidebar showTitle={isClicked}/> : null}
      <Menubar menuClicked={menuClicked}/>
      </div>
      <div>
-      <Routes>
-       
-      <Route path='/' element={<HomePage itemClicked={clickedOutside}/>}/>
-      <Route path='/home' element={<HomePage itemClicked={clickedOutside}/>} />
-      <Route path='about'  element={<About itemClicked={clickedOutside}/>}></Route>
-      <Route path='education' element={<Education itemClicked={clickedOutside}/>}></Route>
-      <Route path='experience' element={<Experience itemClicked={clickedOutside}/>}></Route>
-      <Route path='skills' element={<Skills itemClicked={clickedOutside}/>}></Route>
-      <Route path='aboutyou' element={<AboutYou itemClicked={clickedOutside}/>}></Route>
-      <Route path='projects' element={<Projects itemClicked={clickedOutside}></Projects>}></Route>
-      
-      </Routes>
+      <PageRoutes clickedOutside={clickedOutside}/>
       </div>
       </div>
     </Router>
