@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 //import {ProSidebar,Menu,MenuItem} from 'react-pro-sidebar';
-import 'react-pro-sidebar/dist/css/styles.css';
 import { SidebarData } from './SidebarData';
 import {IconContext } from 'react-icons';
 import './Sidebar.css'
