@@ -1,16 +1,15 @@
 .about-container{
+   position: absolute;
     height:100vh;
     background:linear-gradient(to bottom,#1a1f1e , #131b1b) ;
-    padding: 90px 300px ;
-    
+    overflow:scroll;
 }
 .about-wrapper{
-    margin: 0 auto;
     background: linear-gradient(to bottom,#293533 , #283b3b);
     text-align: center;
     border-radius: 10px;
-    padding:8px 16px;
-   height: auto;
+    margin: 20px;
+    padding:10px 32px;
 }
 .about-title{
     font-family: 'Courier';

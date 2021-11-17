@@ -1,30 +1,32 @@
 .side-bar {
     background:linear-gradient(to bottom,#2f3a38 , #3c4747);
-    width: auto;
-    min-height: 100vh;
-    position: fixed;
-    z-index: 1;
-    top:0;
+    max-width: 320px;
+    z-index: 2;
+   height: 100vh;
+}
+.sidebar-list{
+    width: 100%;
+    padding-top: 80px;
+   
 }
 
-.sidebar-list{
+.sidebar-box{
     height: 100%;
     width: 100%;
-    padding: 0;
-    margin-top: 64px;
+   
 }
 
 .sidebar-item{
+    
     display: flex;
-    height: 32px;
     width: 100%;
     text-decoration: none;
-    padding:8px 0px;
-    margin:16px 0;
     -webkit-tap-highlight-color: transparent;
     transition: 0.5s;
     transform-origin: center;
     border-radius: 12px;
+    align-items: center;
+    margin:0px 0px;
     
 }
 .sidebar-item:hover{
@@ -32,16 +34,16 @@
     border-radius: 8px;
 }
 .sidebar-icon{
-    padding: 0 18px;
-    font-size: 28px;
-    
+    padding: 12px;
+    text-align: center;
+    font-size: 24px;
 }
 .sidebar-title{
-    font-size: 18px;
+    font-size: 16px;
     font-family:'Courier';
     color: rgb(51, 235, 66);
     font-weight:bold;
     text-align: center;
-    padding-top: 4px;
-    margin-right: 32px;
+    margin-right: 20px;
+    padding: 6px;
 }

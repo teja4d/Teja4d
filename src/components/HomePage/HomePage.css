@@ -1,8 +1,8 @@
-.home-page {
+.home-wrapper {
     text-align: center;
-    background-image: linear-gradient(to bottom,#1a1f1e , #131b1b);
     min-height: 100vh;
-    margin: 0 auto;
+    overflow-x: hidden;
+   
   }
   .content-title{
     font-family: 'Courier';
@@ -23,4 +23,13 @@
     color:rgb(233, 245, 67);
     font-size: 18px;
     margin:0;
+  }
+  .home-page{
+    background-image: linear-gradient(to bottom,#1a1f1e , #131b1b);
+    width: 100vw;
+    box-sizing: content-box;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: center;
   }

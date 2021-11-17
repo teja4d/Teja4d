@@ -1,9 +1,10 @@
 import React from 'react'
 import './About.css'
 export default function About({itemClicked}) {
-    const paddingValue = window.innerWidth > 480 ? "32px 300px" : "90px 20px";
+    //const paddingValue = window.innerWidth > 480 ? "32px 300px" : "90px 20px";
+    //style={{padding:`${paddingValue}`}}
     return (
-        <div className='about-container' style={{padding:`${paddingValue}`}}>
+        <div className='about-container' >
         <div onClick={itemClicked} className='about-wrapper'>
         <h3 className='about-title'>About Teja</h3>
         <p className='about-text'>Teja loves when someone call him Teja4D.He is an <span> introvert </span> 

@@ -5,38 +5,47 @@ import { FaWrench,FaSuitcase,FaGraduationCap,FaRobot,FaUserGraduate} from 'react
 import { BsFillGrid3X3GapFill} from 'react-icons/bs'
 export const SidebarData = [
     {
-        tittle:'Digital Garden',
+        tittle:'Home',
         icon:<AiFillHome/>,
-        path:'/home'
+        path:'/home',
+        description:'Home Page'
     },
     {
         tittle:'About Me',
         icon:<RiContactsFill/>,
-        path:'/about'
+        path:'/about',
+        description:'Who is this guy ?'
     },
     {
-        tittle:'My Skills',
+        tittle:'Skills',
         icon:<FaWrench/>,
-        path:'/skills'
+        path:'/skills',
+        description:'My skill set'
+        
     },
     {
-        tittle:'My Experience',
+        tittle:'Experience',
         icon:<FaSuitcase/>,
-        path:'/experience'
+        path:'/experience',
+        description:'My Experience'
     },
     {
         tittle:'Projects',
         icon:<BsFillGrid3X3GapFill/>,
-        path:'/projects'
+        path:'/projects',
+        description:'Cool projects I have done'
+
     },
     {
         tittle:'Education',
         icon:<FaUserGraduate/>,
-        path:'/education'
+        path:'/education',
+        description:'My Education and other stuff'
     },
     {
         tittle:'About you',
         icon:<FaRobot/>,
-        path:'/aboutyou'
+        path:'/aboutyou',
+        description:'Want to see your details ?'
     }
 ]

@@ -13,6 +13,7 @@ export default function AboutYou({itemClicked}) {
   const memory = window.navigator.deviceMemory;
   const height = window.innerHeight;
   const width = window.innerWidth;
+  const padding = width > 480 ? "10px 32px":"10px 12px"
   const angle = window.screen.orientation.angle; //window.screen?.orientation?.angle
   const mode =
     window.screen.orientation.type.indexOf("landscape") > -1
@@ -33,12 +34,12 @@ export default function AboutYou({itemClicked}) {
 
   //console.log(userData);
 
-  const paddingValue = window.innerWidth > 480 ? "32px 300px" : "90px 20px";
+  //const paddingValue = window.innerWidth > 480 ? "32px 300px" : "90px 20px";
 
   return (
     <div>{ isDataFetched ? 
-    <div className="aboutyou-container"style={{padding:`${paddingValue}`}}>
-      <div className="about-wrapper" onClick={itemClicked}>
+    <div className="about-container">
+      <div className="about-wrapper" style={{padding:padding}} onClick={itemClicked}>
       <h3 className='about-title'>About You</h3>
         <div className="about-text">
           <p>

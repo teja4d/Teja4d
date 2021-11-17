@@ -5,23 +5,24 @@
     background-color: rgb(140, 250, 89);
     border-radius: 2px;
     animation: menubar 3s linear infinite ;
-    
 }
 .menu{
    padding-top: 18px;
-   position:fixed;
+   position:absolute;
    z-index: 3;
-   padding-left: 18px;
+   margin: 4px 8px;
+   top: 0;
+  
 }
 
 @keyframes menubar {
-    0%{width:32px;background-color:greenyellow }
+    0%{background-color:greenyellow; }
 
-    25%{width:40px;background-color: red;}
+    25%{background-color: red;}
 
-    50%{width:32px;background-color:rgb(144, 144, 185)}
+    50%{background-color:rgb(144, 144, 185)}
 
-    75%{width:40px;background-color:red}
+    75%{background-color:red}
 
    
 }
