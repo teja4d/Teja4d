@@ -1,23 +1,31 @@
 .content-container{
- 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96.7vw;
+  overflow-x: hidden;
+  
 }
 
 .welcome-text {
   font-family:"Courier";
   font-size: 32px;
   color: cornflowerblue;
+  margin-top: 20px;
 }
 
 .typer-text-start{
   color: rgb(235, 73, 51);
   size: 24px;
   font-family: 'Courier';
+  margin-top: 20px;
 }
 
 .typer-text-end{
   color: rgb(51, 235, 66);
   size: 24px;
   font-family: 'Courier';
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 480px){

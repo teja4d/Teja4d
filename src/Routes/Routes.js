@@ -11,7 +11,7 @@ export default function PageRoutes({clickedOutside}) {
     return (
     
     <Routes>
-     <Route path='/' element={<HomePage itemClicked={clickedOutside}/>} />
+     <Route path='/' element={<HomePage  itemClicked={clickedOutside}/>} />
      <Route path='home' element={<HomePage itemClicked={clickedOutside}/>} />
       <Route exact path='about'  element={<About itemClicked={clickedOutside}/>}></Route>
       <Route path='education' element={<Education itemClicked={clickedOutside}/>}></Route>

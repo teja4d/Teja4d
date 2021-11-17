@@ -28,7 +28,7 @@ export default function SocialIcons() {
         navigator.vibrate(80);
     }
     return (
-        <div>
+        <div className='icon-container'>
             <div className='icon-wrapper'>
                 {[...icons].map((icon,index)=>(
                 <a key={index} href={icon.url} style={{"color":"inherit"}}> 

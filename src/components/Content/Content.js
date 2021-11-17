@@ -11,6 +11,7 @@ export default function Content() {
 
     return (
         <div className='content-container'>
+            
             <Typist avgTypingDelay={90}>
             <h1 className='welcome-text'>Welcome to My Digital Garden</h1>
             <h1 className='typer-text-start' >I'm a Student</h1>
