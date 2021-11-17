@@ -38,9 +38,9 @@ export default function AboutYou({itemClicked}) {
 
   return (
     <div>{ isDataFetched ? 
-    <div className="about-container">
-      <div className="about-wrapper" style={{padding:padding}} onClick={itemClicked}>
-      <h3 className='about-title'>About You</h3>
+    <div className="aboutyou-container">
+      <div className="aboutyou-wrapper" style={{padding:padding}} onClick={itemClicked}>
+      <h3 className='aboutyou-title'>About You</h3>
         <div className="about-text">
           <p>
             Hi visitor, You seem to be accessing my website from the ip address
