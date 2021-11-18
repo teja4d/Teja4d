@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import DeviceDetector from "device-detector-js";
 import { ImSpinner9 } from "react-icons/im";
 import { IconContext } from "react-icons";
-import './AboutYou.css'
+import "./AboutYou.css";
 import Headertext from "../../components/Headertext/Headertext";
-export default function AboutYou({itemClicked}) {
+export default function AboutYou({ itemClicked }) {
   const [userData, setUserdata] = useState({});
   const [batteryData, setBattery] = useState({});
   const [isDataFetched, setFetchData] = useState(false);
@@ -14,7 +14,7 @@ export default function AboutYou({itemClicked}) {
   const memory = window.navigator.deviceMemory;
   const height = window.innerHeight;
   const width = window.innerWidth;
-  const padding = width > 480 ? "10px 32px":"10px 12px"
+  const padding = width > 480 ? "10px 32px" : "10px 12px";
   const angle = window.screen.orientation.angle; //window.screen?.orientation?.angle
   const mode =
     window.screen.orientation.type.indexOf("landscape") > -1
@@ -26,8 +26,7 @@ export default function AboutYou({itemClicked}) {
       await fetch("https://ipapi.co/json/")
         .then((res) => res.json())
         .then(setFetchData(true))
-        .then((data) => setUserdata(data))
-        ;
+        .then((data) => setUserdata(data));
     };
     fetchData();
     navigator.getBattery().then((data) => setBattery(data));
@@ -38,10 +37,11 @@ export default function AboutYou({itemClicked}) {
   //const paddingValue = window.innerWidth > 480 ? "32px 300px" : "90px 20px";
 
   return (
-
     <div className="aboutyou-container">
       <div className="aboutyou-wrapper" onClick={itemClicked}>
-     <Headertext color='blue' size={42}>About You</Headertext>
+        <Headertext color="blue" size={42}>
+          About You
+        </Headertext>
         <div className="aboutyou-text">
           <p>
             Hi visitor, You seem to be accessing my website from the ip address
@@ -72,30 +72,23 @@ export default function AboutYou({itemClicked}) {
           </p>
           <p>
             Your device's screen ↕️ height is <span>{height}</span>&nbsp;pixels
-            and screen ↔️ width is <span>{width}</span>&nbsp;pixels,{" "}
-           
-              Your device is currently in the <span>{mode}</span>&nbsp;
-              {mode === "landscape" ? "🖥" : "📱"}&nbsp;mode
-           
-              {" "}
-              and seems to be tilted at a <span>{angle}&#176;</span>angle
+            and screen ↔️ width is <span>{width}</span>&nbsp;pixels, Your device
+            is currently in the <span>{mode}</span>&nbsp;
+            {mode === "landscape" ? "🖥" : "📱"}&nbsp;mode and seems to be tilted
+            at a <span>{angle}&#176;</span>angle
           </p>
 
           <p>
-           
-              Your battery 🔋 seems to be having{" "}
-              <span>{Math.round(batteryData.level * 100)}%</span>&nbsp;charge and is
-              currently {" "}<span>{batteryData.charging ? 'is 🔌' : 'not'} </span>charging
-             
-          
+            Your battery 🔋 seems to be having{" "}
+            <span>{Math.round(batteryData.level * 100)}%</span>&nbsp;charge and
+            is currently <span>{batteryData.charging ? "is 🔌" : "not"} </span>
+            charging
           </p>
           <p>
-           
-              Your network speed 🏃🏾‍♂️ seems to be around{" "}
-              <span>{connection.downlink}&nbsp;mbps ⚡️</span>&nbsp;which is
-              effectively a&nbsp;<span>{connection.effectiveType}</span>
-              &nbsp;connection 🔗
-           
+            Your network speed 🏃🏾‍♂️ seems to be around{" "}
+            <span>{connection.downlink}&nbsp;mbps ⚡️</span>&nbsp;which is
+            effectively a&nbsp;<span>{connection.effectiveType}</span>
+            &nbsp;connection 🔗
           </p>
 
           <p>
@@ -105,6 +98,5 @@ export default function AboutYou({itemClicked}) {
         </div>
       </div>
     </div>
-    
   );
 }

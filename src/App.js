@@ -36,7 +36,7 @@ export default function App() {
           {/* <Menubar menuClicked={menuClicked} /> */}
           
         </div>
-        <div style={{"overflow-x": "hidden"}}>
+        <div style={{"overflow-x": "hidden",width:"100%"}}>
           <PageRoutes clickedOutside={clickedOutside} />
         </div>
       </div>
