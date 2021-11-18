@@ -6,7 +6,7 @@ import {IconContext } from 'react-icons';
 import './Sidebar.css'
 
 export default function Sidebar({showTitle,menuClicked}) {
-    const display = window.innerWidth>480 ? "relative":"fixed"
+    const display = window.innerWidth>480 ? "sticky":"fixed"
     return (
         <div className='side-bar' style={{position:display}}>
             <div className='sidebar-list'>

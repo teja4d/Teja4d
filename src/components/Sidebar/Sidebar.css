@@ -1,18 +1,14 @@
 .side-bar {
     background:linear-gradient(to bottom,#2f3a38 , #3c4747);
     width: auto;
-    height:100vmax;
-     z-index: 3;
-     position: fixed;
+    z-index: 90;
+    position: sticky;
+    top:0;
 }
 .sidebar-list{
-    width: 100%;
-    padding-top: 80px;
-}
-
-.sidebar-box{
-    height: 100%;
-    width: 100%;
+    vertical-align: middle;
+    height: 100vh;
+    padding:20px 0px ;
 }
 
 .sidebar-item{
@@ -21,11 +17,8 @@
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
     transition: 0.5s;
-    transform-origin: center;
     border-radius: 12px;
-    align-items: center;
     margin:0px;
-    
 }
 .sidebar-item:hover{
     background: linear-gradient(to bottom,#415a55 , #415c5c);
@@ -44,4 +37,7 @@
     text-align: center;
     margin-right: 18px;
     padding: 6px;
+}
+.sidebar-box{
+    padding-top:20px;
 }

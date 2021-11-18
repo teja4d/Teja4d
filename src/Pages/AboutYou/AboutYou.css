@@ -3,6 +3,8 @@
     height:100vh;
     /* background:linear-gradient(to bottom,#1a1f1e , #131b1b) ; */
     background: black;
+    overflow:scroll;
+    padding:20px 0px ;
  }
  .aboutyou-wrapper{
     
@@ -24,9 +26,9 @@
      font-size: 18px;
      color: rgb(51, 235, 66);
      font-weight: 900;
-     text-align:left
+     text-align:center;
  }
- .about-text span,.about-fav span{
+ .aboutyou-text span,.about-fav span{
      font-family:'Courier';
      color: rgb(226, 62, 33);
      font-style: italic;

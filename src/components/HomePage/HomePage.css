@@ -1,6 +1,7 @@
 .home-wrapper {
     text-align: center;
-    min-height: 100vh; 
+  
+    
   }
   .content-title{
     font-family: 'Courier';
@@ -23,11 +24,7 @@
     margin:0;
   }
   .home-page{
-   
+    padding:20px 0px ;
     background: black;
-    box-sizing: content-box;
-    overflow: hidden;
-    
-    display: flex;
-    justify-content: center;
+    height:100vh;
   }

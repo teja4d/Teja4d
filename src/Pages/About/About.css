@@ -1,17 +1,16 @@
 .about-container{
    position: absolute;
-    height:100vh;
+    height:100%;
     background: black;
+    width: auto;
+    padding:20px 0px ;
     /* background:linear-gradient(to bottom,#1a1f1e , #131b1b) ; */
-    overflow:scroll;
-    padding:10px 18px; 
 }
 .about-wrapper{
     /* background: linear-gradient(to bottom,#293533 , #283b3b); */
-    text-align: center;
+   text-align: center;
     border-radius: 10px;
-    margin-top: 72px;
-    padding:10px 18px;    
+    margin-top: 72px 24px;    
 }
 .about-title{
     font-family: 'Courier';
@@ -25,7 +24,7 @@
     font-size: 18px;
     color: rgb(51, 235, 66);
     font-weight: 900;
-    text-align:start;
+    text-align:center;
 }
 .about-text span,.about-fav span{
     font-family:'Courier';

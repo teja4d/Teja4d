@@ -37,11 +37,11 @@ export default function AboutYou({itemClicked}) {
   //const paddingValue = window.innerWidth > 480 ? "32px 300px" : "90px 20px";
 
   return (
-    <div>{ isDataFetched ? 
+
     <div className="aboutyou-container">
-      <div className="aboutyou-wrapper" style={{padding:padding}} onClick={itemClicked}>
+      <div className="aboutyou-wrapper" onClick={itemClicked}>
       <h3 className='aboutyou-title'>About You</h3>
-        <div className="about-text">
+        <div className="aboutyou-text">
           <p>
             Hi visitor, You seem to be accessing my website from the ip address
             📡 <span>{userData.ip}</span>, your internet service provider is{" "}
@@ -103,9 +103,7 @@ export default function AboutYou({itemClicked}) {
           </p>
         </div>
       </div>
-    </div>:<IconContext.Provider value={{color:"rgb(247, 73, 51)"}}>
-                    <div><ImSpinner9/></div>
-                    </IconContext.Provider>}
     </div>
+    
   );
 }

@@ -10,7 +10,7 @@ export default function ProgressBar(props) {
     100%{width:${(props) => props.progressdone}}
 `;
   const Progressbar = styled.div`
-    height: 18px;
+    height: 12px;
     width: ${(props) => props.progress || 240}px;
     background: #d8d8d8;
     border-radius: 20px;
@@ -24,6 +24,12 @@ export default function ProgressBar(props) {
 
     animation: ${load} 2s 5 alternate;
   `;
+  const Value = styled.div`
+    height:24px;
+    width: 12px;
+    border-radius:50%
+    background-color:red;
+    `
   const ContainerTab =styled.div`
   width:${ScreenSize > 480 ? 480 : 320}px;
   height:150px;
@@ -37,7 +43,7 @@ export default function ProgressBar(props) {
   justify-content: center;
   align-items: center;
   padding: 12px 24px;
-  margin-top:60px;
+  margin-top:30px;
   `
   const TitleText = styled.h1`
   color: rgb(221, 39, 26);
@@ -49,7 +55,10 @@ export default function ProgressBar(props) {
         <TitleText>{props.children}</TitleText>
         <div className="progressbar">
           <Progressbar progress={320}>
-            <Progressdone progressdone={props.progress}></Progressdone>
+   
+            <Progressdone progressdone={props.progress}>
+            <Value/>
+            </Progressdone>
           </Progressbar>
         </div>
       </ContainerTab>

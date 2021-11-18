@@ -29,9 +29,12 @@ export default function App() {
       <div style={{ display:"flex"}}>
         <div>
           {screenSize > 480 || isClicked ? (
+           
             <Sidebar  menuClicked={menuClicked} showTitle={isClicked} />
+           
           ) : <Menubar menuClicked={menuClicked} />}
           {/* <Menubar menuClicked={menuClicked} /> */}
+          
         </div>
         <div style={{"overflow-x": "hidden"}}>
           <PageRoutes clickedOutside={clickedOutside} />
