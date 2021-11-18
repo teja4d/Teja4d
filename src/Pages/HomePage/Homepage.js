@@ -10,7 +10,6 @@ import SocialIcons from '../../components/socialicons/SocialIcons';
 export default function HomePage({itemClicked}) {
   
   return (
-      <>
     <div className="home-page" onClick={itemClicked}>
       
       <div className='home-wrapper'>
@@ -23,8 +22,6 @@ export default function HomePage({itemClicked}) {
       <Content></Content>
       </div>
       </div>
-      </>
-
   );
 }
 

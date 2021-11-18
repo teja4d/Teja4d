@@ -1,6 +1,9 @@
 .home-wrapper {
     text-align: center;
-    
+    padding:20px 0px ;
+    background: black;
+    height:100vh; 
+    width: 100vw; 
   }
   .content-title{
     font-family: 'Courier';
@@ -23,8 +26,12 @@
     margin:0;
   }
   .home-page{
-    padding:20px 0px ;
-    background: black;
-    height:100vh;
-    min-width: 100vw;
+    
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+   
   }
