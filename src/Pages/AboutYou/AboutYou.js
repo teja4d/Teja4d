@@ -3,6 +3,7 @@ import DeviceDetector from "device-detector-js";
 import { ImSpinner9 } from "react-icons/im";
 import { IconContext } from "react-icons";
 import './AboutYou.css'
+import Headertext from "../../components/Headertext/Headertext";
 export default function AboutYou({itemClicked}) {
   const [userData, setUserdata] = useState({});
   const [batteryData, setBattery] = useState({});
@@ -40,7 +41,7 @@ export default function AboutYou({itemClicked}) {
 
     <div className="aboutyou-container">
       <div className="aboutyou-wrapper" onClick={itemClicked}>
-      <h3 className='aboutyou-title'>About You</h3>
+     <Headertext color='blue' size={42}>About You</Headertext>
         <div className="aboutyou-text">
           <p>
             Hi visitor, You seem to be accessing my website from the ip address

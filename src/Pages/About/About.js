@@ -1,4 +1,5 @@
 import React from 'react'
+import Headertext from '../../components/Headertext/Headertext'
 import './About.css'
 export default function About({itemClicked}) {
     //const paddingValue = window.innerWidth > 480 ? "32px 300px" : "90px 20px";
@@ -6,7 +7,7 @@ export default function About({itemClicked}) {
     return (
         <div className='about-container' >
         <div onClick={itemClicked} className='about-wrapper'>
-        <h3 className='about-title'>About Teja</h3>
+        <Headertext color='blue' size={42}>About Me</Headertext>
         <p className='about-text'>Teja loves when someone call him Teja4D.He is an <span> introvert </span> 
             who is <span> fun loving,friendly</span> and with a decent knowledge in <span>latest technologies</span>.
             He is a highly motivated <span>self learner </span> and fond in learning <span>new technologies</span>.

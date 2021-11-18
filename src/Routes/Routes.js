@@ -6,7 +6,7 @@ import Experience from '../Pages/Experience';
 import AboutYou from '../Pages/AboutYou/AboutYou';
 import Skills from '../Pages/Skills/Skills';
 import Projects from '../Pages/Projects'
-import HomePage from '../components/HomePage/Homepage';
+import HomePage from '../Pages/HomePage/Homepage';
 export default function PageRoutes({clickedOutside}) {
     return (
     

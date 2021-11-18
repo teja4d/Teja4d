@@ -3,13 +3,16 @@ import styled from 'styled-components'
 
 export default function Headertext(props) {
   const  Header = styled.h1`
-    color:${props=>props.color};
+    color:${props=>props.color} ;
+    font-size:${props=>props.size ||32 }px;
     margin:0;
     text-align:center;
-    padding:32px;`
+    padding:32px;
+    text-decoration:underline;
+    `
     return (
         <div>
-            <Header color={props.color}>{props.children}</Header>
+            <Header size={props.size} color={props.color}>{props.children}</Header>
         </div>
     )
 }

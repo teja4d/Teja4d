@@ -7,7 +7,7 @@ export default function ProgressBar(props) {
     const ScreenSize = window.innerWidth
   const load = keyframes`
     0%{width:10px;border-radius: 20px; }
-    100%{width:${(props) => props.progressdone}}
+    100%{width:${(props) => props.progressdone}px}
 `;
   const Progressbar = styled.div`
     height: 12px;
@@ -21,8 +21,7 @@ export default function ProgressBar(props) {
     height: 100%;
     width: ${(props) => (props.progressdone)*320/100 || 10}px;
     border-radius: 20px;
-
-    animation: ${load} 2s 5 alternate;
+    animation: ${load} 3s 3 alternate;
   `;
   const Value = styled.div`
     height:24px;
