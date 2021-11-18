@@ -1,28 +1,4 @@
-.App {
-  text-align: center;
-  background-image: linear-gradient(to bottom,#1a1f1e , #131b1b);
-  min-height: 100vh;
-}
-.content-title{
-  font-family: 'Courier';
-  color:rgb(51, 235, 66);
-  font-size: 24px;
-  margin-top: 32px;
-  margin-bottom:2px;
-}
-.nick-name{
-  font-family: 'Courier';
-  color:rgb(247, 73, 51);
-  font-size: 32px;
-  margin-top:2px;
-  font-weight: 700;
-}
-.support-letter {
-  font-family: 'Courier';
-  color:rgb(233, 245, 67);
-  font-size: 18px;
-  margin:0;
-}
+
 *{
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -30,5 +6,6 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family:Courier;
   
 }

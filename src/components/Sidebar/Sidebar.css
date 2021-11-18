@@ -1,9 +1,9 @@
 .side-bar {
     background:linear-gradient(to bottom,#2f3a38 , #3c4747);
-    max-width: 480px;
-    height: 100vh;
-    position:fixed;
-   z-index: 3;
+    width: auto;
+    height:100vmax;
+     z-index: 3;
+     position: fixed;
 }
 .sidebar-list{
     width: 100%;
@@ -13,11 +13,9 @@
 .sidebar-box{
     height: 100%;
     width: 100%;
-   
 }
 
 .sidebar-item{
-    
     display: flex;
     width: 100%;
     text-decoration: none;
