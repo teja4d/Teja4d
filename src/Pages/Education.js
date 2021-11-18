@@ -1,5 +1,5 @@
 import React from 'react'
-import Contentbox from '../components/contentbox/Contentbox'
+//import Contentbox from '../components/contentbox/Contentbox'
 
 export default function Education({itemClicked}) {
     return (

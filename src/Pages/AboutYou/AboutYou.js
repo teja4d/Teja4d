@@ -1,31 +1,30 @@
 import React, { useEffect, useState } from "react";
 import DeviceDetector from "device-detector-js";
-import { ImSpinner9 } from "react-icons/im";
-import { IconContext } from "react-icons";
+
 import "./AboutYou.css";
 import Headertext from "../../components/Headertext/Headertext";
 export default function AboutYou({ itemClicked }) {
   const [userData, setUserdata] = useState({});
   const [batteryData, setBattery] = useState({});
-  const [isDataFetched, setFetchData] = useState(false);
+  //const [isDataFetched, setFetchData] = useState(false);
   const device = new DeviceDetector().parse(window.navigator.userAgent);
   const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const connection = window.navigator.connection;
   const memory = window.navigator.deviceMemory;
   const height = window.innerHeight;
   const width = window.innerWidth;
-  const padding = width > 480 ? "10px 32px" : "10px 12px";
+  //const padding = width > 480 ? "10px 32px" : "10px 12px";
   const angle = window.screen.orientation.angle; //window.screen?.orientation?.angle
   const mode =
     window.screen.orientation.type.indexOf("landscape") > -1
       ? "landscape"
       : "portrait";
-  const referrer = window.document.referrer;
+  //const referrer = window.document.referrer;
   useEffect(() => {
     const fetchData = async () => {
       await fetch("https://ipapi.co/json/")
         .then((res) => res.json())
-        .then(setFetchData(true))
+        //.then(setFetchData(true))
         .then((data) => setUserdata(data));
     };
     fetchData();

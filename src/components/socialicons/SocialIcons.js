@@ -1,7 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faFacebook,faLinkedin,faGithub,faTwitter, faFacebookF, faLinkedinIn, faTwitterSquare} from '@fortawesome/free-brands-svg-icons'
+import {faFacebook,faGithub,faLinkedinIn, faTwitterSquare} from '@fortawesome/free-brands-svg-icons'
 
 import './SocialIcons.css'
 export default function SocialIcons() {

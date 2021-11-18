@@ -1,14 +1,15 @@
 .side-bar {
     background:linear-gradient(to bottom,#2f3a38 , #3c4747);
     width: auto;
-    z-index: 90;
+    z-index: 3;
     position: sticky;
     top:0;
 }
 .sidebar-list{
-    vertical-align: middle;
+   
     height: 100vh;
     padding:20px 0px ;
+    
 }
 
 .sidebar-item{
@@ -37,7 +38,4 @@
     text-align: center;
     margin-right: 18px;
     padding: 6px;
-}
-.sidebar-box{
-   
 }

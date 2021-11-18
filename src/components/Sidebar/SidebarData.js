@@ -1,7 +1,7 @@
 import React from 'react'
 import {AiFillHome} from 'react-icons/ai';
 import { RiContactsFill} from 'react-icons/ri';
-import { FaWrench,FaSuitcase,FaGraduationCap,FaRobot,FaUserGraduate} from 'react-icons/fa';
+import { FaWrench,FaSuitcase,FaRobot,FaUserGraduate} from 'react-icons/fa';
 import { BsFillGrid3X3GapFill} from 'react-icons/bs'
 export const SidebarData = [
     {

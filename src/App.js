@@ -5,7 +5,7 @@ import Menubar from "./components/Menubars/Menubar";
 import Sidebar from "./components/Sidebar/Sidebar";
 import PageRoutes from "./Routes/Routes";
 import "./App.css";
-import { faBorderNone } from "@fortawesome/free-solid-svg-icons";
+//import { faBorderNone } from "@fortawesome/free-solid-svg-icons";
 export default function App() {
   const [isClicked, setClicked] = useState(false);
   const screenSize = window.innerWidth;
@@ -36,7 +36,7 @@ export default function App() {
           {/* <Menubar menuClicked={menuClicked} /> */}
           
         </div>
-        <div style={{"overflow-x": "hidden",width:"100%"}}>
+        <div style={{"overflowX": "hidden"}}>
           <PageRoutes clickedOutside={clickedOutside} />
         </div>
       </div>

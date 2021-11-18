@@ -1,16 +1,22 @@
 .about-container{
-   position: absolute;
-    height:100vh;
+  
+   
     /* background:linear-gradient(to bottom,#1a1f1e , #131b1b) ; */
-    background-color: black;
-    overflow:scroll;
-    padding:20px 0px ;
-    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
  }
  .about-wrapper{
+    padding-bottom: 40px;
     text-align: center;
-     padding: 8px;
-   
+    
+     background: black;
+     height:100vh;
+     width: 100vw; 
  }
  .about-title{
      font-family: 'Courier';

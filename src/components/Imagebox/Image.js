@@ -1,5 +1,4 @@
 import React from "react";
-import image from "../../assets/Teja_avatar.jpeg";
 
 import "./Image.css";
 export default function Image() {
