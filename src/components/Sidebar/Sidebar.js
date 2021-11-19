@@ -13,7 +13,7 @@ export default function Sidebar({showTitle,menuClicked}) {
             <div className='sidebar-list'>
             <Menubar menuClicked={menuClicked} />
             {SidebarData.map((item,index)=>(
-                <div className='sidebar-box' key={index} style={{"paddingTop":padding}}>
+                <div className='sidebar-box' onClick={menuClicked} key={index} style={{"paddingTop":padding}}>
                 <Link to={item.path}   className='sidebar-item'>
                     <IconContext.Provider value={{color:"rgb(247, 73, 51)"}}>
                     <i className='sidebar-icon'>{item.icon}</i>
