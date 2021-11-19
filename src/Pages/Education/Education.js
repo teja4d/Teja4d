@@ -5,7 +5,7 @@ import Headertext from "../../components/Headertext/Headertext";
 import unilogo from "../../assets/unilogo.jpeg";
 import { EducationData } from "./EducationData";
 export default function Education({ itemClicked, align }) {
-  const [size, setSize] = useState({});
+  
   const desktop = {
     size1: "32px",
     size2: "24px",
@@ -13,12 +13,12 @@ export default function Education({ itemClicked, align }) {
     logoHeight: 120,
     logoWidth: "120px",
     content: "space-between",
-    divWidth: "120px",
+    divWidth: "100%",
      display: "flex",
      gap2: "10px" ,
      justifyContent:"space-between",
-      gap1: "60px",
-     textAlign: "center",
+      gap1: "10%",
+     textAlign: "start",
      alignItems: "center",
      textAlign2:'start'
   };
@@ -33,14 +33,13 @@ export default function Education({ itemClicked, align }) {
     display: "initial",
      gap2: "10px" ,
      justifyContent:"space-between",
-      gap1: "0px",
+      gap1: "10px",
      textAlign: "center",
      alignItems: "center",
      textAlign2: "center",
   };
-  useEffect(() => {
-    window.innerWidth > 480 ? setSize(desktop) : setSize(mobile);
-  }, []);
+  
+  const size = window.innerWidth>480 ?desktop:mobile
 
   return (
     <div style={{ background: "black" }} onClick={itemClicked}>
@@ -76,9 +75,11 @@ export default function Education({ itemClicked, align }) {
                 justifyContent:size.justifyContent,
                 gap: size.gap1,
                 textAlign: size.textAlign,
-                alignItems: size.alignItems
+                alignItems: size.alignItems,
+                flexWrap:'wrap',
+                overflow:'hidden'
               }}>
-                <div style={{ display: size.display, gap: size.gap2 }}>
+                <div style={{ display: size.display, gap: size.gap2,alignItems:'center' }}>
                   <img
                     style={{
                       height: `${size.logoHeight}px`,
@@ -88,8 +89,8 @@ export default function Education({ itemClicked, align }) {
                     src={data.logo}
                   ></img>
 
-                  <div style={{ lineHeight: "12px" }}>
-                    <h1 style={{ fontSize: size.size1, color: "#3361ea" }}>
+                  <div >
+                    <h1 style={{fontSize: size.size1, color: "#3361ea"}}>
                       {data.name}
                     </h1>
                     <p
