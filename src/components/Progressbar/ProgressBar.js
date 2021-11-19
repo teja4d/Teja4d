@@ -9,11 +9,12 @@ export default function ProgressBar(props) {
       <ContainerTab>
         <TitleText>{props.children}</TitleText>
         <div className="progressbar">
-          <Progressbar progress={320}>
+          <Progressbar progress={280}>
    
             <Progressdone progressdone={props.progress}>
-            <Value/>
+             
             </Progressdone>
+           
           </Progressbar>
         </div>
       </ContainerTab>
@@ -27,16 +28,16 @@ const load = keyframes`
   100%{width:${(props) => props.progressdone}px}
 `;
 const Progressbar = styled.div`
-  height: 12px;
-  width: ${(props) => props.progress || 240}px;
+  height: 6px;
+  width: ${(props) => ScreenSize > 480 ? props.progress : 240}px;
   background: #d8d8d8;
   border-radius: 20px;
 `;
 const Progressdone = styled.div`
-  background: linear-gradient(to left,#1c27bd,#4648b1);
-  box-shadow: 3px 1px 3px -3px #1c27bd, 0 2px 5px #1c27bd;
+  background: linear-gradient(#4fa5db,#0029ff);
+  box-shadow: 0px 0px 4px #4fa5db;
   height: 100%;
-  width: ${(props) => (props.progressdone)*320/100 || 10}px;
+  width: ${(props) => ScreenSize > 480 ? (props.progressdone)*280/100 : (props.progressdone)*240/100 || 10}px;
   border-radius: 20px;
   animation: ${load} 3s 3 alternate;
 `;
@@ -47,12 +48,11 @@ const Value = styled.div`
   background-color:red;
   `
 const ContainerTab =styled.div`
-width:${ScreenSize > 480 ? 480 : 320}px;
-height:150px;
-background:linear-gradient(to bottom,#2e3534 , #0b1f1f) ;
+width:${ScreenSize > 480 ? 320 : 280}px;
+height:120px;
+background:linear-gradient(#58db4f,#57e956,#00d4ff);
+box-shadow:0px 0px 24px #58db4f;
 border-radius: 12px;
-padding: 0px 12px;
-
 `
 const Container = styled.div`
 display: flex;
@@ -65,3 +65,17 @@ const TitleText = styled.h1`
 color: rgb(221, 39, 26);
 text-align: center;
 font-size: 24px;`
+
+const Circle = styled.div`
+height:60px;
+width:60px;
+border-radius:50%;
+background:white;
+margin:0 auto;
+border:2px solid red;
+margin-top:10px;
+`
+const Number = styled.h1`
+text-align:center;
+margin-bottom:10px
+`

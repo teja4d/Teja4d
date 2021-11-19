@@ -7,7 +7,8 @@ export default function FlexBox() {
     flex-wrap:wrap;
     gap:0px;
     justify-content:space-evenly;
-    align-items:center
+    align-items:center;
+   
     `
     return (
             <Flex></Flex>

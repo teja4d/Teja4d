@@ -5,3 +5,11 @@
     justify-content:space-evenly;
     align-items:center;
 }
+.skill-container{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}

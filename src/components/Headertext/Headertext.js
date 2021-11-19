@@ -5,16 +5,16 @@ export default function Headertext(props) {
   
     return (
         <div>
-            <Header size={props.size} color={props.color}>{props.children}</Header>
+            <Header size={props.size} align={props.align} color={props.color}>{props.children}</Header>
         </div>
     )
 }
 
 const  Header = styled.h1`
-    color:${props=>props.color} ;
+    color:${props=>props.color || "#3361ea"} ;
     font-size:${props=>props.size ||32 }px;
     margin:0;
-    text-align:center;
-    padding:32px;
+    text-align:${props=>props.align};
+    padding:24px;
     text-decoration:underline;
     `
