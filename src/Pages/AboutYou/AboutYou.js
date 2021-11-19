@@ -38,12 +38,12 @@ export default function AboutYou({ itemClicked }) {
   return (
     <div className="aboutyou-container">
       <div className="aboutyou-wrapper" onClick={itemClicked}>
-        <Headertext color="blue" size={42}>
+        <Headertext color="white" size={42}>
           About You
         </Headertext>
         <div className="aboutyou-text">
           <p>
-            Hi visitor, You seem to be accessing my website from the ip address
+            Hi! visitor, You seem to be accessing my website from the ip address
             📡 <span>{userData.ip}</span>, your internet service provider is{" "}
             <span>{userData.org}</span>
           </p>

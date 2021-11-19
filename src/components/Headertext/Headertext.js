@@ -16,5 +16,5 @@ const  Header = styled.h1`
     margin:0;
     text-align:${props=>props.align};
     padding:24px;
-    text-decoration:underline;
+    
     `

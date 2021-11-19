@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.af0e9a0d.chunk.css",
-    "main.js": "/static/js/main.a04dfad0.chunk.js",
-    "main.js.map": "/static/js/main.a04dfad0.chunk.js.map",
+    "main.js": "/static/js/main.c5d4d61f.chunk.js",
+    "main.js.map": "/static/js/main.c5d4d61f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.aa3e6502.js",
     "runtime-main.js.map": "/static/js/runtime-main.aa3e6502.js.map",
     "static/js/2.0ac059d0.chunk.js": "/static/js/2.0ac059d0.chunk.js",
@@ -15,12 +15,13 @@
     "static/media/collogo.6dfed709.jpeg": "/static/media/collogo.6dfed709.jpeg",
     "static/media/Image.css": "/static/media/image.4bf05786.jpeg",
     "static/media/inter.c7ea9414.png": "/static/media/inter.c7ea9414.png",
+    "static/media/nologo.10d5209b.jpeg": "/static/media/nologo.10d5209b.jpeg",
     "static/media/school.d3a20049.jpeg": "/static/media/school.d3a20049.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.aa3e6502.js",
     "static/js/2.0ac059d0.chunk.js",
     "static/css/main.af0e9a0d.chunk.css",
-    "static/js/main.a04dfad0.chunk.js"
+    "static/js/main.c5d4d61f.chunk.js"
   ]
 }

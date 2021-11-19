@@ -1,19 +1,15 @@
-import React, { useEffect, useState } from "react";
-import styled from "styled-components";
-import Headertext from "../../components/Headertext/Headertext";
-//import Contentbox from '../components/contentbox/Contentbox';
-import unilogo from "../../assets/unilogo.jpeg";
-import { EducationData } from "./EducationData";
-export default function Education({ itemClicked, align }) {
-  const [size, setSize] = useState({});
+import React,{useEffect,useState} from 'react'
+import {ExperienceData} from './ExperienceData';
+import Headertext from '../../components/Headertext/Headertext';
+export default function Experience({itemClicked}) {
   const desktop = {
     size1: "32px",
     size2: "24px",
     size3: "18px",
-    logoHeight: 120,
-    logoWidth: "120px",
+    logoHeight: 100,
+    logoWidth: "100px",
     content: "space-between",
-    divWidth: "120px",
+    divWidth: "160px",
      display: "flex",
      gap2: "10px" ,
      justifyContent:"space-between",
@@ -38,14 +34,13 @@ export default function Education({ itemClicked, align }) {
      alignItems: "center",
      textAlign2: "center",
   };
-  useEffect(() => {
-    window.innerWidth > 480 ? setSize(desktop) : setSize(mobile);
-  }, []);
+
+  const size = window.innerWidth >480 ? desktop : mobile
 
   return (
     <div style={{ background: "black" }} onClick={itemClicked}>
       <Headertext align="center" color="cyan" size="48">
-        Education
+        Work Experience
       </Headertext>
 
       <div
@@ -57,8 +52,8 @@ export default function Education({ itemClicked, align }) {
           justifyContent: "center",
         }}
       >
-        <div style={{ width: "100vw", height: "100%" }}>
-          {EducationData.map((data, index) => (
+        <div style={{ width: "100vw", minHeight: "100vh" }}>
+          {ExperienceData.map((data, index) => (
             <div
               key={index}
               style={{
@@ -78,19 +73,23 @@ export default function Education({ itemClicked, align }) {
                 textAlign: size.textAlign,
                 alignItems: size.alignItems
               }}>
-                <div style={{ display: size.display, gap: size.gap2 }}>
+                <div style={{ display: size.display,gap: size.gap2 }}>
                   <img
                     style={{
                       height: `${size.logoHeight}px`,
                       width: size.logoWidth,
                       borderRadius: `${size.logoHeight / 8}px`,
+                   
+                     top:0,
+                     bottom:0,
+                     margin:'auto'
                     }}
                     src={data.logo}
                   ></img>
 
                   <div style={{ lineHeight: "12px" }}>
-                    <h1 style={{ fontSize: size.size1, color: "#3361ea" }}>
-                      {data.name}
+                    <h1 style={{ fontSize: size.size1, color: "#3361ea" ,textAlign:size.textAlign2}}>
+                      {data.company}
                     </h1>
                     <p
                       style={{
@@ -99,7 +98,7 @@ export default function Education({ itemClicked, align }) {
                         color: "#07f748",
                       }}
                     >
-                      {data.location}
+                      {data.type}
                     </p>
                     <h2
                       style={{
@@ -108,16 +107,18 @@ export default function Education({ itemClicked, align }) {
                         color: "white",
                       }}
                     >
-                      {data.course}
+                      {data.role}
                     </h2>
+                    <h3 style={{
+                        textAlign: size.textAlign2,
+                        fontSize: size.size3,
+                        color: "orange",
+                      }}>{data.technologies}</h3>
                   </div>
                 </div>
                 <div style={{ lineHeight: "3px", textAlign: "center" }}>
                   <h3 style={{ color: "red", fontSize: size.size2 }}>
-                    {data.year}
-                  </h3>
-                  <h3 style={{ color: "yellowgreen", fontSize: size.size2 }}>
-                    {data.score}
+                    {data.date}
                   </h3>
                 </div>
               </div>
@@ -185,3 +186,6 @@ export default function Education({ itemClicked, align }) {
                 </h3>
               </div> */
 }
+
+      
+ 
