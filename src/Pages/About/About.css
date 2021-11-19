@@ -7,14 +7,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    background: black;
     
  }
  .about-wrapper{
     padding-bottom: 40px;
     text-align: center;
     
-     background: black;
+    
      height:100vh;
      width: 100vw; 
  }

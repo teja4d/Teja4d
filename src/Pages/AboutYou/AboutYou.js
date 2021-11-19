@@ -14,9 +14,9 @@ export default function AboutYou({ itemClicked }) {
   const height = window.innerHeight;
   const width = window.innerWidth;
   //const padding = width > 480 ? "10px 32px" : "10px 12px";
-  const angle = window.screen.orientation.angle; //window.screen?.orientation?.angle
+  const angle = window.screen?.orientation?.angle; //window.screen?.orientation?.angle
   const mode =
-    window.screen.orientation.type.indexOf("landscape") > -1
+    window.screen?.orientation?.type.indexOf("landscape") > -1
       ? "landscape"
       : "portrait";
   //const referrer = window.document.referrer;
@@ -28,10 +28,14 @@ export default function AboutYou({ itemClicked }) {
         .then((data) => setUserdata(data));
     };
     fetchData();
-    navigator.getBattery().then((data) => setBattery(data));
+    if(device.client.name != 'Safari'){
+      navigator.getBattery().then((data) => setBattery(data));
+    }
+    
+    
   }, []);
 
-  //console.log(userData);
+  console.log(device);
 
   //const paddingValue = window.innerWidth > 480 ? "32px 300px" : "90px 20px";
 
@@ -76,19 +80,20 @@ export default function AboutYou({ itemClicked }) {
             {mode === "landscape" ? "🖥" : "📱"}&nbsp;mode and seems to be tilted
             at a <span>{angle}&#176;</span>angle
           </p>
-
-          <p>
+        {batteryData ?   <p>
             Your battery 🔋 seems to be having{" "}
             <span>{Math.round(batteryData.level * 100)}%</span>&nbsp;charge and
             is currently <span>{batteryData.charging ? "is 🔌" : "not"} </span>
             charging
-          </p>
-          <p>
+          </p>:<p>you might be using <span>Safari </span> browser,Unfortunately I cannot fetch you <span>battery</span> data.Please use <span>chrome</span> for more information</p>}
+        
+          {connection ? <p>
             Your network speed 🏃🏾‍♂️ seems to be around{" "}
             <span>{connection.downlink}&nbsp;mbps ⚡️</span>&nbsp;which is
             effectively a&nbsp;<span>{connection.effectiveType}</span>
             &nbsp;connection 🔗
-          </p>
+          </p>:null}
+          
 
           <p>
             Your browser/device is set to&nbsp;
