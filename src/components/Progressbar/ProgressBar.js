@@ -34,7 +34,7 @@ const Progressbar = styled.div`
   border-radius: 20px;
 `;
 const Progressdone = styled.div`
-  background: linear-gradient(#4fa5db,#0029ff);
+  background: yellowgreen;
   box-shadow: 0px 0px 4px #4fa5db;
   height: 100%;
   width: ${(props) => ScreenSize > 480 ? (props.progressdone)*280/100 : (props.progressdone)*240/100 || 10}px;
@@ -50,8 +50,8 @@ const Value = styled.div`
 const ContainerTab =styled.div`
 width:${ScreenSize > 480 ? 320 : 280}px;
 height:120px;
-background:linear-gradient(#58db4f,#57e956,#00d4ff);
-box-shadow:0px 0px 24px #58db4f;
+background:linear-gradient(#0F2027,#203A43,#2C5364);
+box-shadow:0px 0px 24px #0F2027;
 border-radius: 12px;
 `
 const Container = styled.div`
