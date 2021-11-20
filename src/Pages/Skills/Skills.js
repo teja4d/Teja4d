@@ -23,7 +23,7 @@ export default function Skills({itemClicked}) {
                  style={{
                   height:"50px",
                   width: "50px",
-                  borderRadius: "8px",
+                  borderRadius: "50%",
                   display:'inline',
                   verticalAlign:'middle',
                   margin:"5px 5px 8px 8px"

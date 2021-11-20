@@ -53,8 +53,6 @@ const Progressdone = styled.div`
   height: 100%;
   width: ${(props) => ScreenSize > 480 ? (props.progressdone)*280/100 : (props.progressdone)*240/100 || 10}px;
   border-radius: 20px;
-  animation: ${load} 2s 2 alternate;
-  
 
   ${ContainerTab}:hover & {
     animation: ${load} 3s 3 alternate;

@@ -5,7 +5,7 @@ import mangodb from '../../assets/mangodb.png'
 import mysql from '../../assets/mysql.png'
 import node from '../../assets/node.png'
 import react from '../../assets/reactjs.png'
-import python from '../../assets/python.jpeg'
+import python from '../../assets/python.png'
 export const SkillsData =[
 
 
