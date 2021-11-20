@@ -7,10 +7,10 @@ export default function ProgressBar(props) {
   return (
     <Container>
       <ContainerTab>
-        <TitleText>{props.children}</TitleText>
+        <TitleText>
+          {props.children}</TitleText>
         <div className="progressbar">
           <Progressbar progress={280}>
-   
             <Progressdone progressdone={props.progress}>
              
             </Progressdone>
@@ -27,6 +27,20 @@ const load = keyframes`
   0%{width:10px;border-radius: 20px; }
   100%{width:${(props) => props.progressdone}px}
 `;
+const ContainerTab =styled.div`
+width:${ScreenSize > 480 ? 320 : 280}px;
+height:120px;
+background:linear-gradient(#0F2027,#203A43,#2C5364);
+box-shadow:0px 0px 24px #0F2027;
+border-radius: 12px;
+transition:all 0.4s ease-in-out;
+:hover{
+  transform:scale(1.1);
+   0 0 5px #78d170,0 0 25px #78d170,0 0 25px #78d170,0 0 5px #78d170
+  box-shadow: 0 0 5px #78d170,0 0 25px #78d170,0 0 25px #78d170,0 0 5px #78d170;
+  
+}
+`
 const Progressbar = styled.div`
   height: 6px;
   width: ${(props) => ScreenSize > 480 ? props.progress : 240}px;
@@ -39,7 +53,13 @@ const Progressdone = styled.div`
   height: 100%;
   width: ${(props) => ScreenSize > 480 ? (props.progressdone)*280/100 : (props.progressdone)*240/100 || 10}px;
   border-radius: 20px;
-  animation: ${load} 3s 3 alternate;
+  animation: ${load} 2s 2 alternate;
+  
+
+  ${ContainerTab}:hover & {
+    animation: ${load} 3s 3 alternate;
+ }
+
 `;
 const Value = styled.div`
   height:24px;
@@ -47,13 +67,7 @@ const Value = styled.div`
   border-radius:50%
   background-color:red;
   `
-const ContainerTab =styled.div`
-width:${ScreenSize > 480 ? 320 : 280}px;
-height:120px;
-background:linear-gradient(#0F2027,#203A43,#2C5364);
-box-shadow:0px 0px 24px #0F2027;
-border-radius: 12px;
-`
+
 const Container = styled.div`
 display: flex;
 justify-content: center;
