@@ -8,13 +8,18 @@ import './Sidebar.css'
 export default function Sidebar({showTitle,menuClicked}) {
     const display = window.innerWidth>480 ? "sticky":"fixed";
     const padding = window.innerWidth>480 ? "40px":"30px";
+
+    const IconClicked = ()=>{
+        navigator.vibrate(20);
+        menuClicked()
+    }
     return (
         <div className='side-bar' style={{position:display}}>
             <div className='sidebar-list'>
-            <Menubar menuClicked={menuClicked} />
+            <Menubar menuClicked={IconClicked} />
             {SidebarData.map((item,index)=>(
-                <div className='sidebar-box' onClick={menuClicked} key={index} style={{"paddingTop":padding}}>
-                <Link to={item.path}   className='sidebar-item'>
+                <div className='sidebar-box'  key={index} style={{"paddingTop":padding}}>
+                <Link to={item.path}  onClick={IconClicked}  className='sidebar-item'>
                     <IconContext.Provider value={{color:"rgb(247, 73, 51)"}}>
                     <i className='sidebar-icon'>{item.icon}</i>
                     </IconContext.Provider>
@@ -23,7 +28,6 @@ export default function Sidebar({showTitle,menuClicked}) {
                       </div> : null}
                 </Link>
                 </div>
-
             ))}
             </div>
         </div>

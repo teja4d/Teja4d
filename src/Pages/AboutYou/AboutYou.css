@@ -6,21 +6,21 @@
     /* 
     overflow:scroll;
     padding:20px 0px ; */ 
-    height: 100%;
+    
+    min-height: 100vh;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     background: black;
+    height: 100%;
  }
  .aboutyou-wrapper{
     
      text-align: center;
      width:100vw;
      padding: 8px;
-     
-    
-     
+     min-height: 100vh;
  }
  .aboutyou-title{
      font-family: 'Courier';

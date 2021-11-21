@@ -3,9 +3,11 @@ import DeviceDetector from "device-detector-js";
 
 import "./AboutYou.css";
 import Headertext from "../../components/Headertext/Headertext";
+import loading from '../../assets/loading.gif'
 export default function AboutYou({ itemClicked }) {
   const [userData, setUserdata] = useState({});
   const [batteryData, setBattery] = useState({});
+  const [fetchData,setFetch] = useState(false);
   //const [isDataFetched, setFetchData] = useState(false);
   const device = new DeviceDetector().parse(window.navigator.userAgent);
   const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -31,16 +33,15 @@ export default function AboutYou({ itemClicked }) {
     if(device.client.name != 'Safari'){
       navigator.getBattery().then((data) => setBattery(data));
     }
-    
-    
+    setTimeout(()=>setFetch(true),2000)
   }, []);
-
-  console.log(device);
-
+  
+  
   //const paddingValue = window.innerWidth > 480 ? "32px 300px" : "90px 20px";
 
   return (
     <div className="aboutyou-container">
+      {fetchData ? 
       <div className="aboutyou-wrapper" onClick={itemClicked}>
         <Headertext color="white" size={42}>
           About You
@@ -100,7 +101,7 @@ export default function AboutYou({ itemClicked }) {
             <span>{isDark ? "dark🌚" : "light🌞"} mode</span>&nbsp;
           </p>
         </div>
-      </div>
+      </div>:<img src={loading} style={{marginLeft:'auto',marginRight:'auto',display:'block',width:"100%"}}></img>}
     </div>
   );
 }

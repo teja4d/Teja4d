@@ -2,17 +2,19 @@
     background:linear-gradient(to bottom,#2f3a38 , #3c4747);
     width: auto;
     z-index: 3;
-    position: sticky;
+    position: fixed;
+    height: 100%;
     top:0;
 }
 .sidebar-list{
    
-    height: 100vh;
     padding:20px 0px ;
-    
+    position: sticky;
+    top:0;
 }
 
 .sidebar-item{
+   
     display: flex;
     width: 100%;
     text-decoration: none;
