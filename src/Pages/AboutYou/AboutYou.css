@@ -8,12 +8,12 @@
     padding:20px 0px ; */ 
     
     min-height: 100vh;
-    text-align: center;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     background: black;
-    height: 100%;
+   
  }
  .aboutyou-wrapper{
     

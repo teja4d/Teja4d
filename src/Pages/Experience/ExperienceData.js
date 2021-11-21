@@ -37,7 +37,7 @@ export const ExperienceData = [
         company:'Teams Aswadhati 2.0',
         role:'Manufacturing Head',
         type:'InternShip',
-        date:'Dec 2017-June 2028',
+        date:'Dec 2017-June 2018',
         technologies:'SolidWorks',
         summury:`Designing, analysing and fabrication of student formula car`,
         logo:nologo,
