@@ -1,7 +1,6 @@
 .home-wrapper {
     text-align: center;
     padding:20px 0px ;
-    background: black;
     width: 100vw; 
   }
   .content-title{
@@ -10,6 +9,7 @@
     font-size: 24px;
     margin-top: 24px;
     margin-bottom:2px;
+    z-index: 5;
   }
   .nick-name{
     font-family: 'Courier';
@@ -30,4 +30,5 @@
     justify-content: center;
     padding: auto;
    min-height: 100vh;
+   
   }

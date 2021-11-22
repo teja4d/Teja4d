@@ -6,7 +6,7 @@
 .welcome-text {
   font-family:"Courier";
   font-size: 32px;
-  color: cornflowerblue;
+  color: #d8ec1e;
   margin-top: 20px;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .typer-text-end{
-  color: rgb(51, 235, 66);
+  color: rgb(27, 235, 44);
   size: 24px;
   font-family: 'Courier';
   margin-top: 20px;
@@ -35,7 +35,7 @@
 .welcome-text {
   font-family:"Courier";
   font-size: 20px;
-  color: cornflowerblue;
+  color:#d8ec1e;
 }
 
 .typer-text-start{

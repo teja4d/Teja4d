@@ -1,7 +1,7 @@
 .side-bar {
     background:linear-gradient(to bottom,#2f3a38 , #3c4747);
     width: auto;
-    z-index: 3;
+    z-index: 10;
     position: fixed;
     height: 100%;
     top:0;
