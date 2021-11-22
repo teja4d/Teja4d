@@ -37,6 +37,7 @@ export default function App() {
           
         </div>
         <div style={{"overflowX": "hidden"}}>
+          
           <PageRoutes clickedOutside={clickedOutside} />
         </div>
       </div>

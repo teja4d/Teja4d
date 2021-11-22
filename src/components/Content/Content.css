@@ -28,7 +28,7 @@
 
   typer-text-end{
     color: rgb(51, 235, 66);
-    size: 18px;
+    size: 15px;
     font-family: 'Courier';
   }
 
@@ -40,7 +40,7 @@
 
 .typer-text-start{
   color: rgb(235, 73, 51);
-  size: 18px;
+  size: 15px;
   font-family: 'Courier';
 }
   

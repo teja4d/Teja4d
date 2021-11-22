@@ -5,11 +5,12 @@ export const VideoBg = styled.video`
 width:100%;
 height:100%;
 object-fit:cover;
+-o-object-fit:cover;
 background:#22a34;
-overflow:hidden;`
+`
 
 export const VideoContainer = styled.div`
-position:absolute;
+position:fixed;
 top:0;
 bottom:0;
 left:0;
