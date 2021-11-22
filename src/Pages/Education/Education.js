@@ -43,7 +43,7 @@ export default function Education({ itemClicked, align }) {
 
   return (
     <div style={{ background: "black" }} onClick={itemClicked}>
-      <Headertext align="center" color="cyan" size="48">
+      <Headertext align="center" color="White" size="48">
         Education
       </Headertext>
 

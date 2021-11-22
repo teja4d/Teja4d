@@ -8,7 +8,7 @@ export default function About({ itemClicked }) {
     <div>
     <div className="about-container">
       <div onClick={itemClicked} className="about-wrapper">
-        <Headertext color="blue" size={42}>
+        <Headertext color="White" size={42}>
           About Me
         </Headertext>
         <div className="about-text">
@@ -21,12 +21,12 @@ export default function About({ itemClicked }) {
             who is <span> fun loving,friendly</span> and with a decent knowledge
             in <span>latest technologies</span>
           </p>
-          .
+        
           <p>
             He is a highly motivated <span>self learner </span> and fond in
             learning <span>new technologies</span>
           </p>
-          .
+          
           <p>
             {" "}
             He loves using his <span>mobile</span> in his free time and a lazy

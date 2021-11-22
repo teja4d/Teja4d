@@ -47,7 +47,7 @@ export default function Experience({ itemClicked }) {
 
   return (
     <div style={{ background: "black" }} onClick={itemClicked}>
-      <Headertext align="center" color="cyan" size="48">
+      <Headertext align="center" color="Yellow" size="48">
         Work Experience
       </Headertext>
 
