@@ -4,7 +4,9 @@ import DeviceDetector from "device-detector-js";
 import "./AboutYou.css";
 import Headertext from "../../components/Headertext/Headertext";
 import loading from '../../assets/loading.gif'
-import { faLeaf } from "@fortawesome/free-solid-svg-icons";
+
+
+
 export default function AboutYou({ itemClicked }) {
   const [userData, setUserdata] = useState({});
   const [batteryData, setBattery] = useState({});
@@ -29,14 +31,16 @@ export default function AboutYou({ itemClicked }) {
         .then((res) => res.json())
         //.then(setFetchData(true))
         .then((data) => setUserdata(data));
+        
     };
     fetchData();
-    if(device.client.name != 'Safari'){
-      navigator.getBattery().then((data) => setBattery(data));
-    }
+    
     setTimeout(()=>setFetch(true),2000)
   }, []);
   
+  if(device.client.name !== 'Safari'){
+    navigator.getBattery().then((data) => setBattery(data));
+  }
   
   //const paddingValue = window.innerWidth > 480 ? "32px 300px" : "90px 20px";
 
@@ -102,7 +106,7 @@ export default function AboutYou({ itemClicked }) {
             <span>{isDark ? "dark🌚" : "light🌞"} mode</span>&nbsp;
           </p>
         </div>
-      </div>:<div style={{height:'100vh',width:'100vw',display:'flex',justifyContent:'center',alignItems:'center'}}><img src={loading} style={{width:'300px',height:'300px'}}></img></div>}
+      </div>:<div style={{height:'100vh',width:'100vw',display:'flex',justifyContent:'center',alignItems:'center'}}><img src={loading} alt='no view' style={{width:'300px',height:'300px'}}></img></div>}
     </div>
   );
 }

@@ -59,12 +59,12 @@ const Progressdone = styled.div`
  }
 
 `;
-const Value = styled.div`
-  height:24px;
-  width: 12px;
-  border-radius:50%
-  background-color:red;
-  `
+// const Value = styled.div`
+//   height:24px;
+//   width: 12px;
+//   border-radius:50%
+//   background-color:red;
+//   `
 
 const Container = styled.div`
 display: flex;
@@ -78,16 +78,15 @@ color: rgb(221, 39, 26);
 text-align: center;
 font-size: 24px;`
 
-const Circle = styled.div`
-height:60px;
-width:60px;
-border-radius:50%;
-background:white;
-margin:0 auto;
-border:2px solid red;
-margin-top:10px;
-`
-const Number = styled.h1`
-text-align:center;
-margin-bottom:10px
-`
+// const Circle = styled.div`
+// height:60px;
+// width:60px;
+// border-radius:50%;
+// background:white;
+// margin:0 auto;
+// border:2px solid red;
+// margin-top:10px;
+// `
+// const Number = styled.h1`
+// text-align:center;
+// margin-bottom:10px

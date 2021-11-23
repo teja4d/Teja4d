@@ -20,6 +20,7 @@ export default function Skills({itemClicked}) {
               
                  <ProgressBar progress={name.value}>
                  <img
+                 alt='no view'
                  style={{
                   height:"50px",
                   width: "50px",

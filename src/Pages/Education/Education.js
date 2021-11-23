@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import styled from "styled-components";
+import React from "react";
+
 import Headertext from "../../components/Headertext/Headertext";
 //import Contentbox from '../components/contentbox/Contentbox';
-import unilogo from "../../assets/unilogo.jpeg";
+
 import { EducationData } from "./EducationData";
 export default function Education({ itemClicked, align }) {
   
@@ -87,6 +87,7 @@ export default function Education({ itemClicked, align }) {
                       borderRadius: `${size.logoHeight / 8}px`,
                     }}
                     src={data.logo}
+                    alt='no view'
                   ></img>
 
                   <div >
@@ -128,61 +129,4 @@ export default function Education({ itemClicked, align }) {
       </div>
     </div>
   );
-}
-
-// const ContentBox = window.innerWidth >480 ? styled.div`
-//   display: flex;
-//   justify-content:space-between;
-//   gap: 60px;
-//   text-align: center;
-//   align-items: center;
-// ` : <div></div>;
-
-
-
-
-{
-  /*  */
-}
-
-{
-  /* <img
-                style={{
-                  height: `${size.logoHeight}px`,
-                  width: size.logoWidth,
-                  borderRadius: `${size.logoHeight / 8}px`,
-                }}
-                src={data.logo}
-              ></img>
-              <div style={{ lineHeight: "12px" }}>
-                <h1 style={{ fontSize: size.size1, color: "#3361ea" }}>
-                  {data.name}
-                </h1>
-                <p
-                  style={{
-                    textAlign: "center",
-                    fontSize: size.size3,
-                    color: "#07f748",
-                  }}
-                >
-                  {data.location}
-                </p>
-                <h2
-                  style={{
-                    textAlign: "center",
-                    fontSize: size.size2,
-                    color: "white",
-                  }}
-                >
-                  {data.course}
-                </h2>
-              </div>
-              <div style={{ lineHeight: "3px", textAlign: "center" }}>
-                <h3 style={{ color: "red", fontSize: size.size2 }}>
-                  {data.year}
-                </h3>
-                <h3 style={{ color: "yellowgreen", fontSize: size.size2 }}>
-                  {data.score}
-                </h3>
-              </div> */
 }

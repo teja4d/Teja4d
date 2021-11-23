@@ -1,8 +1,6 @@
-import React from 'react'
-import image from '../../assets/image.jpeg';
-import Headertext from '../Headertext/Headertext';
+import React from 'react';
 import { IconContext } from 'react-icons/lib';
-import {FaExternalLinkAlt} from 'react-icons/fa'
+import {FaExternalLinkAlt} from 'react-icons/fa';
 import './Profilecard.css'
 import { BoldHeader } from '../boldbuttons/Boldheader';
 export default function Profilecard(props) {
@@ -10,7 +8,7 @@ export default function Profilecard(props) {
     return (
         <div className='profile-card'>
         <div className='profiles'>
-            <img src={props.data.image} className='images'></img>
+            <img src={props.data.image} className='images' alt='no view'></img>
             <h3 style={{textAlign:'center',color:'coral'}}>{props.data.title}</h3>
             <div style={{display:'flex',gap:'8px'}}>
            {props.data.code.map((data,index)=>(
