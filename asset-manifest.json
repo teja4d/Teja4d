@@ -1,20 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.726f831b.chunk.css",
-    "main.js": "/static/js/main.908f0ee1.chunk.js",
-    "main.js.map": "/static/js/main.908f0ee1.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.4a9272ba.js",
-    "runtime-main.js.map": "/static/js/runtime-main.4a9272ba.js.map",
-    "static/js/2.787eb9a7.chunk.js": "/static/js/2.787eb9a7.chunk.js",
-    "static/js/2.787eb9a7.chunk.js.map": "/static/js/2.787eb9a7.chunk.js.map",
-    "static/js/3.b188c052.chunk.js": "/static/js/3.b188c052.chunk.js",
-    "static/js/3.b188c052.chunk.js.map": "/static/js/3.b188c052.chunk.js.map",
+    "main.js": "/static/js/main.6c503fa7.chunk.js",
+    "main.js.map": "/static/js/main.6c503fa7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.47e47eeb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.47e47eeb.js.map",
+    "static/js/2.69c8459c.chunk.js": "/static/js/2.69c8459c.chunk.js",
+    "static/js/2.69c8459c.chunk.js.map": "/static/js/2.69c8459c.chunk.js.map",
+    "static/js/3.8cc696c5.chunk.js": "/static/js/3.8cc696c5.chunk.js",
+    "static/js/3.8cc696c5.chunk.js.map": "/static/js/3.8cc696c5.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.726f831b.chunk.css.map": "/static/css/main.726f831b.chunk.css.map",
-    "static/js/2.787eb9a7.chunk.js.LICENSE.txt": "/static/js/2.787eb9a7.chunk.js.LICENSE.txt",
+    "static/js/2.69c8459c.chunk.js.LICENSE.txt": "/static/js/2.69c8459c.chunk.js.LICENSE.txt",
     "static/media/collogo.6dfed709.jpeg": "/static/media/collogo.6dfed709.jpeg",
     "static/media/emoji.f5d1cf04.png": "/static/media/emoji.f5d1cf04.png",
-    "static/media/image.4bf05786.jpeg": "/static/media/image.4bf05786.jpeg",
     "static/media/inter.c7ea9414.png": "/static/media/inter.c7ea9414.png",
     "static/media/loading.afbd6385.gif": "/static/media/loading.afbd6385.gif",
     "static/media/Image.css": "/static/media/myimage.e23c9b3b.jpeg",
@@ -23,9 +22,9 @@
     "static/media/video.3d361d51.mp4": "/static/media/video.3d361d51.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.4a9272ba.js",
-    "static/js/2.787eb9a7.chunk.js",
+    "static/js/runtime-main.47e47eeb.js",
+    "static/js/2.69c8459c.chunk.js",
     "static/css/main.726f831b.chunk.css",
-    "static/js/main.908f0ee1.chunk.js"
+    "static/js/main.6c503fa7.chunk.js"
   ]
 }
