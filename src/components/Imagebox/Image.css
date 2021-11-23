@@ -43,7 +43,7 @@ animation: animate 5s linear infinite;
     content: "";
     position: absolute;
     inset:6px;
-    background:url('../../assets/myimage.jpeg');
+    background:url('../../assets/myimage.webp');
     background-size: 230px 230px;
     background-repeat: no-repeat;
     text-align: center;

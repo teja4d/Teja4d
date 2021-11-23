@@ -1,8 +1,13 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Headertext from "../../components/Headertext/Headertext";
 import "./About.css";
 export default function About({ itemClicked }) {
   //const paddingValue = window.innerWidth > 480 ? "32px 300px" : "90px 20px";
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   //style={{padding:`${paddingValue}`}}
   return (
     <div>

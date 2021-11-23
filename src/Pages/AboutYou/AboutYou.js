@@ -8,6 +8,11 @@ import loading from '../../assets/loading.gif'
 
 
 export default function AboutYou({ itemClicked }) {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const [userData, setUserdata] = useState({});
   const [batteryData, setBattery] = useState({});
   const [fetchData,setFetch] = useState(false);

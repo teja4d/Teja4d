@@ -1,8 +1,8 @@
-import uber from '../../assets/ubereats.png';
-import inventory from '../../assets/inventory.jpeg';
-import emoji from '../../assets/emoji.png';
-import queen from '../../assets/queens.png';
-import myimage from '../../assets/myimage.jpeg'
+import uber from '../../assets/projects/ubereats.webp';
+import inventory from '../../assets/projects/inventory.webp';
+import emoji from '../../assets/projects/emoji.webp';
+import queen from '../../assets/projects/queens.webp';
+import myimage from '../../assets/projects/myimage.webp'
 
 
 

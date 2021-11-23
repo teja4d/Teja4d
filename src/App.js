@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { HashRouter as Router } from "react-router-dom";
 import AnimatedCursor from "react-animated-cursor";
 import Menubar from "./components/Menubars/Menubar";
@@ -9,6 +9,8 @@ import "./App.css";
 export default function App() {
   const [isClicked, setClicked] = useState(false);
   const screenSize = window.innerWidth;
+
+  
   const menuClicked = () => {
     setClicked(!isClicked);
   };
@@ -16,6 +18,11 @@ export default function App() {
   const clickedOutside = () => {
     setClicked(false);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+
   return (
     <Router>
       <AnimatedCursor

@@ -1,6 +1,6 @@
-import wipro from '../../assets/wiprologo.png'
-import ihawk from '../../assets/ihawk.jpeg';
-import nologo from '../../assets/nologo.jpeg'
+import wipro from '../../assets/experience/wiprologo.webp'
+import ihawk from '../../assets/experience/ihawk.webp';
+import nologo from '../../assets/experience/nologo.webp'
 
 
 export const ExperienceData = [

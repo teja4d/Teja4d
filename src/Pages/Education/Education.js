@@ -1,10 +1,15 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import Headertext from "../../components/Headertext/Headertext";
 //import Contentbox from '../components/contentbox/Contentbox';
 
 import { EducationData } from "./EducationData";
 export default function Education({ itemClicked, align }) {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   
   const desktop = {
     size1: "32px",

@@ -1,5 +1,5 @@
 
-
+import React,{useEffect} from 'react';
 import './HomePage.css';
 import Content from '../../components/Content/Content'
 import Image from '../../components/Imagebox/Image';
@@ -10,6 +10,10 @@ import { useRef } from 'react';
 
 
 export default function HomePage({itemClicked}) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
     const videoRef = useRef(null);
   return (
     <div className="home-page" onClick={itemClicked}>

@@ -1,10 +1,14 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Headertext from '../../components/Headertext/Headertext'
 import ProgressBar from '../../components/Progressbar/ProgressBar'
 import { SkillsData } from './SkillsData';
 
 import './Skills.css'
 export default function Skills({itemClicked}) {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+    
     return (
         <div className='skill-container' style={{background:'black'}} onClick={itemClicked}>
         <div style={{width: "100vw"}} >

@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, {useState,useEffect } from "react";
 import { ExperienceData } from "./ExperienceData";
 import Headertext from "../../components/Headertext/Headertext";
 import { IconContext } from "react-icons";
@@ -7,6 +7,10 @@ import {
   IoIosArrowDropupCircle,
 } from "react-icons/io";
 export default function Experience({ itemClicked }) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const desktop = {
     size1: "32px",
     size2: "24px",

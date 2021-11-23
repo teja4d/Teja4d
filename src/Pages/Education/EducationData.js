@@ -1,7 +1,7 @@
-import unilogo from '../../assets/unilogo.jpeg'
-import collogo from '../../assets/collogo.jpeg'
-import inter from '../../assets/inter.png';
-import school from '../../assets/school.jpeg'
+import unilogo from '../../assets/education/unilogo.webp';
+import collogo from '../../assets/education/collogo.webp';
+import inter from '../../assets/education/inter.webp';
+import school from '../../assets/education/school.webp';
 export const EducationData =[{
     name:'University of Nottingham',
     location:'Nottingham,United Kingdom',

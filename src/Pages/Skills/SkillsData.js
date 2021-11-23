@@ -1,11 +1,11 @@
-import jslogo from '../../assets/javascript.png'
-import bootstrap from '../../assets/bootstrap.png'
-import git from '../../assets/git.png'
-import mangodb from '../../assets/mangodb.png'
-import mysql from '../../assets/mysql.png'
-import node from '../../assets/node.png'
-import react from '../../assets/reactjs.png'
-import python from '../../assets/python.png'
+import jslogo from '../../assets/skills/javascript.webp'
+import bootstrap from '../../assets/skills/bootstrap.webp'
+import git from '../../assets/skills/git.webp'
+import mangodb from '../../assets/skills/mangodb.webp'
+import mysql from '../../assets/skills/mysql.webp'
+import node from '../../assets/skills/node.webp'
+import react from '../../assets/skills/reactjs.webp'
+import python from '../../assets/skills/python.webp'
 export const SkillsData =[
 
 
