@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.726f831b.chunk.css",
-    "main.js": "/static/js/main.6c503fa7.chunk.js",
-    "main.js.map": "/static/js/main.6c503fa7.chunk.js.map",
+    "main.css": "/static/css/main.5823c917.chunk.css",
+    "main.js": "/static/js/main.4a2805ae.chunk.js",
+    "main.js.map": "/static/js/main.4a2805ae.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.47e47eeb.js",
     "runtime-main.js.map": "/static/js/runtime-main.47e47eeb.js.map",
     "static/js/2.69c8459c.chunk.js": "/static/js/2.69c8459c.chunk.js",
@@ -10,21 +10,36 @@
     "static/js/3.8cc696c5.chunk.js": "/static/js/3.8cc696c5.chunk.js",
     "static/js/3.8cc696c5.chunk.js.map": "/static/js/3.8cc696c5.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.726f831b.chunk.css.map": "/static/css/main.726f831b.chunk.css.map",
+    "static/css/main.5823c917.chunk.css.map": "/static/css/main.5823c917.chunk.css.map",
     "static/js/2.69c8459c.chunk.js.LICENSE.txt": "/static/js/2.69c8459c.chunk.js.LICENSE.txt",
-    "static/media/collogo.6dfed709.jpeg": "/static/media/collogo.6dfed709.jpeg",
-    "static/media/emoji.f5d1cf04.png": "/static/media/emoji.f5d1cf04.png",
-    "static/media/inter.c7ea9414.png": "/static/media/inter.c7ea9414.png",
+    "static/media/bootstrap.d6541b60.webp": "/static/media/bootstrap.d6541b60.webp",
+    "static/media/collogo.0f123945.webp": "/static/media/collogo.0f123945.webp",
+    "static/media/emoji.4e8f3a2b.webp": "/static/media/emoji.4e8f3a2b.webp",
+    "static/media/git.82dcf54d.webp": "/static/media/git.82dcf54d.webp",
+    "static/media/ihawk.921239f1.webp": "/static/media/ihawk.921239f1.webp",
+    "static/media/inter.f6d81ce7.webp": "/static/media/inter.f6d81ce7.webp",
+    "static/media/inventory.0246ac63.webp": "/static/media/inventory.0246ac63.webp",
+    "static/media/javascript.af01d48d.webp": "/static/media/javascript.af01d48d.webp",
     "static/media/loading.afbd6385.gif": "/static/media/loading.afbd6385.gif",
-    "static/media/Image.css": "/static/media/myimage.e23c9b3b.jpeg",
-    "static/media/nologo.10d5209b.jpeg": "/static/media/nologo.10d5209b.jpeg",
-    "static/media/school.d3a20049.jpeg": "/static/media/school.d3a20049.jpeg",
-    "static/media/video.3d361d51.mp4": "/static/media/video.3d361d51.mp4"
+    "static/media/mangodb.050a24ba.webp": "/static/media/mangodb.050a24ba.webp",
+    "static/media/Image.css": "/static/media/myimage.80d40b7e.webp",
+    "static/media/myimage.85a7f6ae.webp": "/static/media/myimage.85a7f6ae.webp",
+    "static/media/mysql.07efd9fe.webp": "/static/media/mysql.07efd9fe.webp",
+    "static/media/node.0b598ff8.webp": "/static/media/node.0b598ff8.webp",
+    "static/media/nologo.fe9329cf.webp": "/static/media/nologo.fe9329cf.webp",
+    "static/media/python.ef41dbd0.webp": "/static/media/python.ef41dbd0.webp",
+    "static/media/queens.06cfd3c6.webp": "/static/media/queens.06cfd3c6.webp",
+    "static/media/reactjs.a05f42de.webp": "/static/media/reactjs.a05f42de.webp",
+    "static/media/school.a9a77f5c.webp": "/static/media/school.a9a77f5c.webp",
+    "static/media/ubereats.9bf4e3c2.webp": "/static/media/ubereats.9bf4e3c2.webp",
+    "static/media/unilogo.78308540.webp": "/static/media/unilogo.78308540.webp",
+    "static/media/video.3d361d51.mp4": "/static/media/video.3d361d51.mp4",
+    "static/media/wiprologo.457e42df.webp": "/static/media/wiprologo.457e42df.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.47e47eeb.js",
     "static/js/2.69c8459c.chunk.js",
-    "static/css/main.726f831b.chunk.css",
-    "static/js/main.6c503fa7.chunk.js"
+    "static/css/main.5823c917.chunk.css",
+    "static/js/main.4a2805ae.chunk.js"
   ]
 }
