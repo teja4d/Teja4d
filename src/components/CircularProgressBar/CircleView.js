@@ -6,7 +6,7 @@ export default function CircleView(props) {
     const dia = props.dia;
     const thickness = props.thickness;
     return (
-        <div style={{transform:'rotate(90deg)',}}>
+        <div style={{transform:'rotate(90deg)',overflow:'hidden'}}>
             <CircleBar dia={dia} left={dia} right={dia} top="0" bottom="0">
                 <Rectangle  height={dia} top={dia/2} 
                 transfrom='50% 0' 
@@ -55,8 +55,9 @@ animation-delay: ${props=>props.delay};
 const InnerCircle = styled.img`
 width: ${props=>props.innerdia}px;
 height:${props=>props.innerdia}px;
+overflow:hidden;
 position: absolute;
-border-radius:50%;
+border-radius:100%;
 transform:rotate(-90deg);
 left:${props => props.sideHeight}px;
 top:${props => props.sideHeight}px;`

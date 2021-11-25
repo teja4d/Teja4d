@@ -15,11 +15,11 @@ export default function Skills({itemClicked}) {
         <div style={{width: "100vw"}} >
         <Headertext color="White" size={48}>Skills</Headertext>
         {SkillsData.map((data,index)=>(
-            <div>
+            <div key={index}>
             <Headertext color="green">{data.category}</Headertext>
             <div className='flex-box'>
             {(data.names).map(name => 
-            <>
+
 
                 <div key={name.name}>
               
@@ -28,7 +28,7 @@ export default function Skills({itemClicked}) {
                      {name.name}
                 </CircleView>
                  </div>
-                  </>)}
+                 )}
             </div>
             <hr style={{border: "0.25 px solid white",marginTop:'30px'}}></hr>
             </div>
