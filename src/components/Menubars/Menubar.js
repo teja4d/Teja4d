@@ -3,8 +3,11 @@ import './Menubar.css'
 export default function Menubar({menuClicked}) {
 
     const IconClicked = ()=>{
-        navigator.vibrate(20);
-        menuClicked()
+        menuClicked();
+        
+        if(navigator.vibrate){
+            navigator.vibrate(20);
+        }
     } 
 
     return (

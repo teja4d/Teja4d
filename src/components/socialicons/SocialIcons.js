@@ -24,7 +24,9 @@ export default function SocialIcons() {
         }
     ]
     const IconClicked = ()=>{
-        navigator.vibrate(20);
+        if(navigator.vibrate){
+            navigator.vibrate(20);
+        }
     }
     return (
         <div className='icon-container'>

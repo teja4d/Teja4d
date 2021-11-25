@@ -6,12 +6,16 @@ import {IconContext } from 'react-icons';
 import './Sidebar.css'
 
 export default function Sidebar({showTitle,menuClicked}) {
-    const display = window.innerWidth>480 ? "sticky":"fixed";
+    const display = window.innerWidth>480 ? "relative":"fixed";
     const padding = window.innerWidth>480 ? "40px":"30px";
 
     const IconClicked = ()=>{
-        navigator.vibrate(20);
-        menuClicked()
+        console.log('item clicked')
+        menuClicked();
+        if(navigator.vibrate){
+            navigator.vibrate(20);
+        }
+        
     }
     return (
         <div className='side-bar' style={{position:display}}>
