@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react'
-import Headertext from '../../components/Headertext/Headertext'
-import ProgressBar from '../../components/Progressbar/ProgressBar'
+import Headertext from '../../components/Headertext/Headertext';
+import ProgressBar from '../../components/Progressbar/ProgressBar';
+import CircleView from '../../components/CircularProgressBar/CircleView';
 import { SkillsData } from './SkillsData';
 
 import './Skills.css'
@@ -22,28 +23,32 @@ export default function Skills({itemClicked}) {
 
                 <div>
               
-                 <ProgressBar progress={name.value}>
-                 <img
-                 alt='no view'
-                 style={{
-                  height:"50px",
-                  width: "50px",
-                  borderRadius: "50%",
-                  display:'inline',
-                  verticalAlign:'middle',
-                  margin:"5px 5px 8px 8px"
-                }}
-                src={name.logo}
-              ></img>
+                 <CircleView percentage={name.value} dia='150' thickness='20' images={name.logo}>
+                 
                      {name.name}
-                </ProgressBar>
+                </CircleView>
                  </div>
                   </>)}
             </div>
-            <hr style={{border: "1px solid white",marginTop:'30px'}}></hr>
+            <hr style={{border: "0.25 px solid white",marginTop:'30px'}}></hr>
             </div>
         ))}
         </div>
         </div> 
         
     )}
+
+
+
+    // <img
+    //              alt='no view'
+    //              style={{
+    //               height:"50px",
+    //               width: "50px",
+    //               borderRadius: "50%",
+    //               display:'inline',
+    //               verticalAlign:'middle',
+    //               margin:"5px 5px 8px 8px"
+    //             }}
+    //             src={name.logo}
+    //           ></img>

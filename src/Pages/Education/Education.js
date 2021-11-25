@@ -99,15 +99,6 @@ export default function Education({ itemClicked, align }) {
                     <h1 style={{fontSize: size.size1, color: "#3361ea"}}>
                       {data.name}
                     </h1>
-                    <p
-                      style={{
-                        textAlign: size.textAlign2,
-                        fontSize: size.size3,
-                        color: "#07f748",
-                      }}
-                    >
-                      {data.location}
-                    </p>
                     <h2
                       style={{
                         textAlign: size.textAlign2,
@@ -117,6 +108,16 @@ export default function Education({ itemClicked, align }) {
                     >
                       {data.course}
                     </h2>
+                    <p
+                      style={{
+                        textAlign: size.textAlign2,
+                        fontSize: size.size3,
+                        color: "#07f748",
+                      }}
+                    >
+                      {data.location}
+                    </p>
+                   
                   </div>
                 </div>
                 <div style={{ lineHeight: "3px", textAlign: "center" }}>

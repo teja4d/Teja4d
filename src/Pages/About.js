@@ -1,19 +1,10 @@
-import React from 'react'
+import React from 'react';
+import CircleView from '../components/CircularProgressBar/CircleView';
+import CircularBar from '../components/CircularProgressBar/CircularBar';
+import image from '../assets/skills/python.webp'
 
 export default function About({itemClicked}) {
     return (
-        <div onClick={itemClicked}>
-            <h3 style={{"color":"yellowgreen",
-        "background":"linear-gradient(to bottom,#1a1f1e , #131b1b)",
-        
-        "minHeight":"100vh",
-       "margin":'0',
-        "fontSize":"16px",
-        "display":"flex",
-        "justifyContent":"center",
-        "alignItems":"center",
-        "fontFamily":"Courier"
-        }}>This Page is under development !</h3>
-        </div>
+        <CircleView dia='180' thickness='30' percentage='78' images={image}/>
     )
 }

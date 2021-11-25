@@ -1,0 +1,65 @@
+.circle-up{
+    width:100px;
+    height: 50px;
+    background-color: rgb(231, 231, 236);
+    border-radius: 100px 100px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+.circle-down{
+    width:100px;
+    height: 50px;
+    background-color: rgb(229, 229, 241);
+    border-radius: 0 0 100px 100px;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.rectangle{
+    height: 50px;
+    width: 100px;
+    background-color:rgb(100, 9, 9);
+    position: absolute;
+    top: 50px;
+    transform-origin:50% 0;
+    animation: animate1 3s forwards linear;
+    
+}
+.rectangle1{
+    height: 50px;
+    width: 100px;
+    background-color:rgb(128, 13, 13);
+    position: absolute;
+    top: -50px;
+    transform-origin:50% 100%;
+    animation: animate2 3s forwards linear;
+    animation-delay: 3s;
+}
+
+.inner-circle{
+    width: 80px;
+    height: 80px;
+    background-color: greenyellow;
+    position: absolute;
+    top: 10px;
+    left:58px;
+    border-radius: 100%;
+}
+
+
+@keyframes animate1 {
+    to{
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes animate2 {
+    to{
+        transform: rotate(180deg);
+    }
+}
+
+
+
+

@@ -111,7 +111,7 @@ export default function AboutYou({ itemClicked }) {
             <span>{isDark ? "dark🌚" : "light🌞"} mode</span>&nbsp;
           </p>
         </div>
-      </div>:<div style={{height:'100vh',width:'100vw',display:'flex',justifyContent:'center',alignItems:'center'}}><img src={loading} alt='no view' style={{width:'300px',height:'300px'}}></img></div>}
+      </div>:<div style={{height:'100vh',width:'100vw',display:'flex',justifyContent:'center',alignItems:'center'}}><img src={loading} alt='no view' style={{width:'300px',height:'300px',borderRadius:'50%'}}></img></div>}
     </div>
   );
 }

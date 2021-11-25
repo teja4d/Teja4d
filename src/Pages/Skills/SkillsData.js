@@ -5,7 +5,8 @@ import mangodb from '../../assets/skills/mangodb.webp'
 import mysql from '../../assets/skills/mysql.webp'
 import node from '../../assets/skills/node.webp'
 import react from '../../assets/skills/reactjs.webp'
-import python from '../../assets/skills/python.webp'
+import python from '../../assets/skills/python.webp';
+import native from '../../assets/skills/native.webp'
 export const SkillsData =[
 
 
@@ -41,7 +42,8 @@ export const SkillsData =[
             logo:node
         }, {
             name:'ReactNative',
-            logo: react
+            logo:native,
+            value:65
         },
         ]
     },
