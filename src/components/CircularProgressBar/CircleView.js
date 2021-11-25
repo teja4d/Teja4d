@@ -3,7 +3,7 @@ import image from '../../assets/skills/python.webp'
 import React from 'react'
 
 export default function CircleView(props) {
-    const dia = window.innerWidth > 480 ? props.dia :props.dia*0.75;
+    const dia = window.innerWidth > 480 ? props.dia : props.dia*0.75;
     const thickness = window.innerWidth >480 ? props.thickness : props.thickness*0.5
     return (
         <div style={{transform:'rotate(90deg)'}}>
@@ -14,8 +14,8 @@ export default function CircleView(props) {
                 percentage={props.percentage < 50 ? ((props.percentage)*180/50):180}></Rectangle>
             </CircleBar>
             <CircleBar  dia={dia} left="0" right="0" top={dia} bottom={dia}>
-                <Rectangle top={-props.dia/2} 
-                height={props.dia}
+                <Rectangle top={-dia/2} 
+                height={dia}
                 transfrom='50% 100%'
                  delay='3s'
                  percentage={props.percentage > 50 ? ((props.percentage-50)*180/50):0}></Rectangle>
@@ -40,7 +40,6 @@ border-top-left-radius:${props =>props.left}px;
 border-top-right-radius:${props =>props.right}px;
 border-bottom-left-radius:${props =>props.bottom}px;
 border-bottom-right-radius:${props =>props.top}px;
-
 `
 const Rectangle = styled.div`
 height:${props => props.height/2}px;
