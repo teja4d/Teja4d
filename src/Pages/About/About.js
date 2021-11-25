@@ -23,18 +23,18 @@ export default function About({ itemClicked }) {
           <p>
             {" "}
             He is an <span> introvert </span>
-            who is <span> fun loving,friendly</span> and with a decent knowledge
-            in <span>latest technologies</span>
+            who is <span> fun-loving,friendly</span> and with a decent knowledge
+            of the <span>latest technologies</span>
           </p>
         
           <p>
-            He is a highly motivated <span>self learner </span> and fond in
+            He is a highly motivated <span>self learner </span> and fond of
             learning <span>new technologies</span>
           </p>
           
           <p>
             {" "}
-            He loves using his <span>mobile</span> in his free time and a lazy
+            He loves using his <span>mobile</span> in his free time and is a lazy
             guy who belives that everything can be done with a mobile.
           </p>
           <p>
@@ -42,7 +42,7 @@ export default function About({ itemClicked }) {
             In his free time you find him doing <span>mobile rooting</span>
             ,exploring the latest <span>tech gadgets</span>.
           </p>
-          <p> He is a type of guy who wants learn and do by his own. </p>
+          <p> He is a type of guy who wants learn and do on his own. </p>
           <p className="about-fav">
             He beleives in <span>Destination ↔ Determination</span>
           </p>

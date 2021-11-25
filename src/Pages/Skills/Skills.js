@@ -19,8 +19,6 @@ export default function Skills({itemClicked}) {
             <Headertext color="green">{data.category}</Headertext>
             <div className='flex-box'>
             {(data.names).map(name => 
-
-
                 <div key={name.name}>
               
                  <CircleView percentage={name.value} dia='150' thickness='18' images={name.logo}>

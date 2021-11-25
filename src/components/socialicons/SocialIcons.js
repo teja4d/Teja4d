@@ -1,14 +1,14 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faFacebook,faGithub,faLinkedinIn, faTwitterSquare} from '@fortawesome/free-brands-svg-icons'
-
+import {faGithub,faLinkedinIn, faTwitterSquare} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './SocialIcons.css'
 export default function SocialIcons() {
     const icons = [
         {
        
-            "icon":faFacebook,
-            "url":"https://www.facebook.com/teja4D"
+            "icon":faEnvelope,
+            "url":"mailto:teja4d.com@gmail.com?subject=Hello Teja4D&body=I've viewed your website ..."
         },
         {
             "icon":faLinkedinIn,
