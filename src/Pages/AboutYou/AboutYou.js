@@ -42,11 +42,11 @@ export default function AboutYou({ itemClicked }) {
     
     setTimeout(()=>setFetch(true),2000)
   }, []);
-  
-  if(device.client.name !== 'Safari'){
+  if(device.client.name !== ('Safari' || "Mobile Safari")){
     navigator.getBattery().then((data) => setBattery(data));
   }
   
+  console.log(device)
   //const paddingValue = window.innerWidth > 480 ? "32px 300px" : "90px 20px";
 
   return (
