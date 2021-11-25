@@ -3,10 +3,10 @@ import image from '../../assets/skills/python.webp'
 import React from 'react'
 
 export default function CircleView(props) {
-    const dia = window.innerWidth > 480 ? props.dia : props.dia*0.75;
-    const thickness = window.innerWidth >480 ? props.thickness : props.thickness*0.5
+    const dia = props.dia;
+    const thickness = props.thickness;
     return (
-        <div style={{transform:'rotate(90deg)'}}>
+        <div style={{transform:'rotate(90deg)',}}>
             <CircleBar dia={dia} left={dia} right={dia} top="0" bottom="0">
                 <Rectangle  height={dia} top={dia/2} 
                 transfrom='50% 0' 
