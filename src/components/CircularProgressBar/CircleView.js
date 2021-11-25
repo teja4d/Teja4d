@@ -3,10 +3,10 @@ import image from '../../assets/skills/python.webp'
 import React from 'react'
 
 export default function CircleView(props) {
-    const dia = props.dia;
-    const thickness = props.thickness;
+    const dia = window.innerWidth > 480 ? props.dia : props.dia*0.75;
+    const thickness = window.innerWidth >480 ? props.thickness : props.thickness*0.5
     return (
-        <div style={{transform:'rotate(90deg)',overflow:'hidden'}}>
+         <div style={{position:'relative'}}>
             <CircleBar dia={dia} left={dia} right={dia} top="0" bottom="0">
                 <Rectangle  height={dia} top={dia/2} 
                 transfrom='50% 0' 
@@ -20,7 +20,10 @@ export default function CircleView(props) {
                  delay='3s'
                  percentage={props.percentage > 50 ? ((props.percentage-50)*180/50):0}></Rectangle>
             </CircleBar>
+           
             <InnerCircle src={props.images} innerdia = {(dia)-(thickness)} sideHeight={thickness/2}/>
+           
+           
         </div>
     )
 }
@@ -33,7 +36,7 @@ to{
 const CircleBar = styled.div`
 width:${props => props.dia}px;
 height:${props => props.dia/2}px;
-background-color:white;
+background-color:'white';
 position:relative;
 overflow:hidden;
 border-top-left-radius:${props =>props.left}px;
@@ -53,11 +56,9 @@ animation-delay: ${props=>props.delay};
 `
 
 const InnerCircle = styled.img`
+position:absolute;
 width: ${props=>props.innerdia}px;
 height:${props=>props.innerdia}px;
-overflow:hidden;
-position: absolute;
-border-radius:100%;
-transform:rotate(-90deg);
+border-radius:50%;
 left:${props => props.sideHeight}px;
 top:${props => props.sideHeight}px;`

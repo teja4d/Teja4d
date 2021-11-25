@@ -23,7 +23,7 @@ export default function Skills({itemClicked}) {
 
                 <div key={name.name}>
               
-                 <CircleView percentage={name.value} dia='150' thickness='20' images={name.logo}>
+                 <CircleView percentage={name.value} dia='150' thickness='18' images={name.logo}>
                  
                      {name.name}
                 </CircleView>
