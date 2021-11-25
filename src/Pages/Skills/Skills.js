@@ -21,7 +21,7 @@ export default function Skills({itemClicked}) {
             {(data.names).map(name => 
             <>
 
-                <div>
+                <div key={name.name}>
               
                  <CircleView percentage={name.value} dia='150' thickness='20' images={name.logo}>
                  

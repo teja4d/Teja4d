@@ -33,7 +33,7 @@ to{
 const CircleBar = styled.div`
 width:${props => props.dia}px;
 height:${props => props.dia/2}px;
-background-color:'white';
+background-color:white;
 position:relative;
 overflow:hidden;
 border-top-left-radius:${props =>props.left}px;
