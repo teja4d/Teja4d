@@ -2,6 +2,7 @@ import uber from '../../assets/projects/ubereats.webp';
 import inventory from '../../assets/projects/inventory.webp';
 import emoji from '../../assets/projects/emoji.webp';
 import queen from '../../assets/projects/queens.webp';
+import game from '../../assets/projects/game.webp'
 import myimage from '../../assets/projects/myimage.webp'
 
 
@@ -70,6 +71,17 @@ export const ProjectData = [
         summary:'Written a N-Queens program using python.',
         image:queen,
         url:'https://github.com/teja4d/n-queens-game-python',
+        code:[{
+            tech:'Python',
+            color:'Blue'
+        }]
+    },
+    {
+        title:'Eat Blaster',
+        summary:'We are a team of six members developed a 2D game using python with pygame library'+
+        "As part of this game we have implemented object oriented programming.",
+        image:game,
+        url:'https://github.com/teja4d/pygame',
         code:[{
             tech:'Python',
             color:'Blue'

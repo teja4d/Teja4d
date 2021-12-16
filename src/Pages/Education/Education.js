@@ -47,7 +47,7 @@ export default function Education({ itemClicked, align }) {
   const size = window.innerWidth>480 ?desktop:mobile
 
   return (
-    <div style={{ background: "black" }} onClick={itemClicked}>
+    <div style={{ background: "black",marginTop:'5%' }} onClick={itemClicked}>
       <Headertext align="center" color="White" size="48">
         Education
       </Headertext>

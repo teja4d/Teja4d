@@ -1,19 +1,20 @@
 .about-container{
   
-   
-    /* background:linear-gradient(to bottom,#1a1f1e , #131b1b) ; */
-    height: 100%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: black;
     
+    margin-top: 10%;
+   
+    height:max-content;
  }
  .about-wrapper{
-    padding-bottom: 40px;
+    
+    
+    bottom:0;
     text-align: center;
-     height:100vh;
+     
      width: 100vw; 
  }
  .about-title{
@@ -29,6 +30,7 @@
      color: rgb(51, 235, 66);
      font-weight: 900;
      text-align:center;
+     
  }
  .about-text span,.about-fav span{
      font-family:'Courier';

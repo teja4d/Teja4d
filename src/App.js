@@ -33,7 +33,7 @@ export default function App() {
         innerScale={0.7}
         outerScale={3}
       /> */}
-      <div style={{ display:"flex", backgroundColor: "black"}}>
+      <div style={{ display:"flex", backgroundColor: "black",height:"100vh"}}>
         <div>
           {screenSize > 480 || isClicked ? (
            
