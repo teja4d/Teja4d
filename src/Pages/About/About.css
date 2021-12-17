@@ -18,14 +18,14 @@
      width: 100vw; 
  }
  .about-title{
-     font-family: 'Courier';
+     
      font-size: 32px;
      color: rgb(28, 85, 241);
      text-align: center;
  }
  
  .about-text{
-     font-family: 'Courier';
+     
      font-size: 18px;
      color: rgb(51, 235, 66);
      font-weight: 900;
@@ -33,13 +33,13 @@
      
  }
  .about-text span,.about-fav span{
-     font-family:'Courier';
+     
      color: rgb(226, 62, 33);
      font-style: italic;
      font-weight: bold;
  }
  .about-fav{
-     font-family: 'Courier';
+     
      font-size: 18px;
      color: rgb(51, 235, 66);
      font-weight: 900;
