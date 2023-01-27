@@ -37,7 +37,6 @@
   animation: move 0.5s linear infinite;
 }
 .navLink a {
-  font-family: "Irish Grover", sans-serif;
   font-size: 1.2rem;
   text-decoration: none;
   padding: 0 1rem;
@@ -60,7 +59,7 @@
   color: rgb(234, 143, 82);
 }
 .navLink4 {
-  color: rgb(226, 107, 237);
+  color: #e26bed;
 }
 .navLink7 {
   color: rgb(70, 207, 234);

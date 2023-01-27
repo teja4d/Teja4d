@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Headertext from "../../components/Headertext/Headertext";
+import {BsPersonCircle} from 'react-icons/bs'
 import "./About.css";
 import { Container } from "react-bootstrap";
 export default function About({ itemClicked }) {
@@ -12,14 +12,18 @@ export default function About({ itemClicked }) {
   //style={{padding:`${paddingValue}`}}
   return (
     <Container className="text-center">
-      <Headertext color="White" size={42}>
-        About Me
-      </Headertext>
+      <h1 className="display-1 text-center" style={{ color: "#F2E3D5" }}>
+        <BsPersonCircle />
+      </h1>
+      <p className="text-center" style={{ color: "#F2E3D5" }}>
+      About me
+        </p>
 
       <div className="cardBorder">
         <div className="about-container">
           <div onClick={itemClicked} className="about-wrapper">
             <div className="about-text">
+              <div className="px-3 text-start my-4">
               <p>
                 As a self-motivated and enthusiastic software engineer
                 specialising in fintech, I have a proven track record of
@@ -61,6 +65,7 @@ export default function About({ itemClicked }) {
                 My qualifications, experience, and passion for technology make
                 me a valuable asset to any organization.
               </p>
+              </div>
             </div>
           </div>
         </div>

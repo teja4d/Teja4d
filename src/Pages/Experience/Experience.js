@@ -7,6 +7,7 @@ import {
   IoIosArrowDropdownCircle,
   IoIosArrowDropupCircle,
 } from "react-icons/io";
+import { MdWorkOutline } from "react-icons/md";
 import { Button, Card, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -52,10 +53,14 @@ export default function Experience({ itemClicked }) {
 
   return (
     <div>
-      <Headertext align="center" color="#F2E3D5" size="48">
-        Work Experience
-      </Headertext>
-
+        <div >
+        <h1 className="display-1 text-center" style={{ color: "#F2E3D5" }}>
+          <MdWorkOutline />
+        </h1>
+        <p className="text-center" style={{ color: "#F2E3D5" }}>
+          Experience
+        </p>
+        </div>
       <Container
         style={{
           textAlign: "center",
@@ -101,18 +106,16 @@ export default function Experience({ itemClicked }) {
                   ></img>
 
                   <div>
-                      <h1
-                        style={{
-                          fontSize: size.size1,
-                          color: "#FF6500",
-                          textAlign: size.textAlign2,
-                        }}
-                      >
-                        {data.company}
-                      </h1>
-                        <p className="h6 text-info">
-                          {data.date}
-                        </p>
+                    <h1
+                      style={{
+                        fontSize: size.size1,
+                        color: "#FF6500",
+                        textAlign: size.textAlign2,
+                      }}
+                    >
+                      {data.company}
+                    </h1>
+                    <p className="h6 text-info">{data.date}</p>
                     <p
                       style={{
                         textAlign: size.textAlign2,
@@ -126,7 +129,7 @@ export default function Experience({ itemClicked }) {
                       style={{
                         textAlign: size.textAlign2,
                         fontSize: size.size2,
-                        color: "white",
+                        color: "#F2E3D5",
                       }}
                     >
                       {data.role}
@@ -134,7 +137,7 @@ export default function Experience({ itemClicked }) {
                     <div className="d-flex flex-wrap">
                       {data.technologies.map((x) => (
                         <Button
-                         key={x}
+                          key={x}
                           size="sm"
                           variant="outline-info"
                           className=" mx-1 my-1"

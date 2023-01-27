@@ -2,7 +2,7 @@ import React,{useEffect} from "react";
 
 import Headertext from "../../components/Headertext/Headertext";
 //import Contentbox from '../components/contentbox/Contentbox';
-
+import {FaGraduationCap} from 'react-icons/fa'
 import { EducationData } from "./EducationData";
 import { Container } from "react-bootstrap";
 export default function Education({ itemClicked, align }) {
@@ -49,9 +49,14 @@ export default function Education({ itemClicked, align }) {
 
   return (
     <Container onClick={itemClicked}>
-      <Headertext align="center" color="White" size="48">
-        Education
-      </Headertext>
+      <h1 className="display-1 text-center" style={{ color: "#F2E3D5" }}>
+        <FaGraduationCap />
+       
+      </h1>
+      <p className="text-center" style={{ color: "#F2E3D5" }}>
+      Education
+        </p>
+      
 
       <div
         style={{
@@ -96,14 +101,14 @@ export default function Education({ itemClicked, align }) {
                   ></img>
 
                   <div >
-                    <h1 style={{fontSize: size.size1, color: "#3361ea"}}>
+                    <h1 style={{fontSize: size.size1, color: "#fefefe"}}>
                       {data.name}
                     </h1>
                     <h2
                       style={{
                         textAlign: size.textAlign2,
                         fontSize: size.size2,
-                        color: "white",
+                        color: "#e26bed",
                       }}
                     >
                       {data.course}
@@ -121,7 +126,7 @@ export default function Education({ itemClicked, align }) {
                   </div>
                 </div>
                 <div style={{ lineHeight: "3px", textAlign: "center" }}>
-                  <h3 style={{ color: "red", fontSize: size.size2 }}>
+                  <h3 style={{ color: "#47aab3", fontSize: size.size2 }}>
                     {data.year}
                   </h3>
                   <h3 style={{ color: "yellowgreen", fontSize: size.size2 }}>

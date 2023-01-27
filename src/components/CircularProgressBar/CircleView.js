@@ -47,7 +47,7 @@ border-bottom-right-radius:${props =>props.top}px;
 const Rectangle = styled.div`
 height:${props => props.height/2}px;
 width:${props => props.height}px;
-background:#396afc;
+background:#47aab3;
 position:absolute;
 top:${props => props.top}px;
 transform-origin:${props => props.transfrom};

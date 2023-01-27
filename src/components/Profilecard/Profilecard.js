@@ -1,32 +1,54 @@
-import React from 'react';
-import { IconContext } from 'react-icons/lib';
-import {FaExternalLinkAlt} from 'react-icons/fa';
-import './Profilecard.css'
-import { BoldHeader } from '../boldbuttons/Boldheader';
+import React from "react";
+import { IconContext } from "react-icons/lib";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import "./Profilecard.css";
+import { Badge, Card } from "react-bootstrap";
 export default function Profilecard(props) {
-    console.log(props)
-    return (
-        <div className='profile-card'>
-        <div className='profiles'>
-            <img src={props.data.image} className='images' alt='no view'></img>
-            <h3 style={{textAlign:'center',color:'coral'}}>{props.data.title}</h3>
-            <div style={{display:'flex',gap:'8px'}}>
-           {props.data.code.map((data,index)=>(
-                 <BoldHeader colour ={data.color}>{data.tech}</BoldHeader>
-           ))}
-          
-            </div>
-           
-            <div style={{margin:"5px"}}>
-            <p style={{textAlign:'center',maxWidth:'320px',color:'white'}}>{props.data.summary}</p>
-            </div>
-           
-            <div style={{position:'absolute',top:'88%'}}>
-            <IconContext.Provider  value={{color:"rgb(247, 203, 181)"}}>
-                    <p style={{fontWeight:'bold'}}><a style={{textDecoration:'none',color:'yellow'}} href={props.data.url}>View Project <FaExternalLinkAlt/></a></p>
-             </IconContext.Provider>
-             </div>
+  let colors = [
+    "primary",
+    "secondary",
+    "success",
+    "danger",
+    "warning",
+    "info",
+    "dark",
+  ];
+  return (
+    <Card style={{ backgroundColor: "#024959", width: "18rem" }}>
+      <Card.Img
+        src={props.data.image}
+        variant="top"
+        alt="no view"
+        width="280px"
+        height="280px"
+      ></Card.Img>
+      <Card.Header style={{ textAlign: "center", color: "#82ccdd" }}>
+        {props.data.title}
+      </Card.Header>
+      <Card.Body >
+       <div className="d-flex justify-content-center">
+       <p className="text-start mt-2" style={{color:'#b8e994'}}>{props.data.summary}</p>
+       </div>
+        <div className="d-flex justify-content-center">
+        {props.data.code.map((data, index) => (
+          <Badge key={index} bg={colors[Math.floor(Math.random() * 6) + 1]} className="mx-1">
+            {data.tech}
+          </Badge>
+        ))}
         </div>
-    </div>
-    )
+      </Card.Body>
+      <Card.Footer className="text-center">
+        <IconContext.Provider value={{ color: "rgb(247, 203, 181)" }}>
+          <p style={{ fontWeight: "bold" }}>
+            <a
+             className="text-decoration-none text-secondary"
+              href={props.data.url}
+            >
+              View Project <FaExternalLinkAlt />
+            </a>
+          </p>
+        </IconContext.Provider>
+      </Card.Footer>
+    </Card>
+  );
 }

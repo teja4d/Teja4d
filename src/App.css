@@ -6,7 +6,8 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-family:'Times New Roman';
+  font-family: "Bourton", sans-serif;
+  letter-spacing: .2rem;
   
 }
 body{

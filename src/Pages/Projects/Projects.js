@@ -1,8 +1,8 @@
 import React,{useEffect} from 'react'
 import Profilecard from '../../components/Profilecard/Profilecard'
 import { ProjectData } from './ProjectData';
-import Headertext from '../../components/Headertext/Headertext';
 import { Container } from 'react-bootstrap';
+import {MdPlaylistAddCheck} from "react-icons/md"
 export default function Projects() {
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -10,7 +10,10 @@ export default function Projects() {
     
     return (
       <div>
-        <Headertext color="White" align="center" size={48}>Projects</Headertext>
+        <h1 className='display-1 text-center' style={{ color: "#F2E3D5" }}><MdPlaylistAddCheck/></h1>
+        <p className="text-center" style={{ color: "#F2E3D5" }}>
+          Projects
+        </p>
         <Container style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
           
           <div>
@@ -19,7 +22,7 @@ export default function Projects() {
              
           {ProjectData.map((item,index)=>
             
-             <Profilecard data={item}></Profilecard>
+             <Profilecard data={item} key={index}></Profilecard>
             
           )}
            </div>
