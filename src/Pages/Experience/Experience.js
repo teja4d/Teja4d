@@ -1,16 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { ExperienceData } from "./ExperienceData";
-import Headertext from "../../components/Headertext/Headertext";
-import { IconContext } from "react-icons";
 import "./Experience.css";
-import {
-  IoIosArrowDropdownCircle,
-  IoIosArrowDropupCircle,
-} from "react-icons/io";
-import { MdWorkOutline } from "react-icons/md";
+import {FaHandPointRight} from 'react-icons/fa'
+import { MdWorkOutline ,MdOutlineExpandMore,MdOutlineExpandLess} from "react-icons/md";
 import { Button, Card, Container } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 export default function Experience({ itemClicked }) {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -109,22 +102,13 @@ export default function Experience({ itemClicked }) {
                     <h1
                       style={{
                         fontSize: size.size1,
-                        color: "#FF6500",
+                        color: "#80DEEA",
                         textAlign: size.textAlign2,
                       }}
                     >
                       {data.company}
                     </h1>
-                    <p className="h6 text-info">{data.date}</p>
-                    <p
-                      style={{
-                        textAlign: size.textAlign2,
-                        fontSize: size.size3,
-                        color: "#07f748",
-                      }}
-                    >
-                      {data.type}
-                    </p>
+                    <p className="h6" style={{color:'#E0F7FA'}}>{data.date}</p>
                     <h2
                       style={{
                         textAlign: size.textAlign2,
@@ -168,7 +152,7 @@ export default function Experience({ itemClicked }) {
 const Accordian = (props) => {
   const { data } = props;
   const [height, maxHeight] = useState(false);
-  let icon = height ? <IoIosArrowDropupCircle /> : <IoIosArrowDropdownCircle />;
+  let icon = height ? <MdOutlineExpandLess /> : <MdOutlineExpandMore />;
   const openContent = () => {
     maxHeight(!height);
   };
@@ -183,14 +167,11 @@ const Accordian = (props) => {
                 className="paragraph text-start px-3"
                 style={{
                   maxHeight: height ? "100vh" : "0",
-                  color: "white",
+                  color: "#e2f8fe",
                   overflow: "hidden",
                 }}
               >
-                <FontAwesomeIcon
-                  icon={faArrowRight}
-                  size="sm"
-                ></FontAwesomeIcon>
+                <FaHandPointRight></FaHandPointRight>
                 &nbsp;
                 {x}
               </p>
@@ -199,15 +180,14 @@ const Accordian = (props) => {
           ))}
         </div>
       )}
-      <IconContext.Provider value={{ color: "#F2E3D5" }}>
+      <h2 style={{color:'white',cursor:'pointer'}}>
         <i
           className="opener-icon"
-          style={{ fontSize: "32px" }}
           onClick={openContent}
         >
           {icon}
         </i>
-      </IconContext.Provider>
+      </h2>
     </div>
   );
 };

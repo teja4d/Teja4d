@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Headertext from "../../components/Headertext/Headertext";
 import CircleView from "../../components/CircularProgressBar/CircleView";
 import { SkillsData } from "./SkillsData";
 import { MdEngineering } from "react-icons/md";

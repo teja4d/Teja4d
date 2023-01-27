@@ -1,5 +1,4 @@
 import styled, { keyframes } from "styled-components";
-import image from '../../assets/skills/python.webp'
 import React from 'react'
 
 export default function CircleView(props) {

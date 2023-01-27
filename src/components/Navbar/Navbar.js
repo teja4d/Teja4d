@@ -7,7 +7,7 @@ import { Nav } from 'react-bootstrap';
 function NavBar() {
   return (
     <>
-      <Navbar expand="xl" className='navBar'>
+      <Navbar expand="xl" className='navBar' >
         <Container className="text-center">
           <Navbar.Brand href="">
           <img className='icon' src={logo} alt="Logo" width={120} />

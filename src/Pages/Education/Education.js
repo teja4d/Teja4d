@@ -1,6 +1,4 @@
 import React,{useEffect} from "react";
-
-import Headertext from "../../components/Headertext/Headertext";
 //import Contentbox from '../components/contentbox/Contentbox';
 import {FaGraduationCap} from 'react-icons/fa'
 import { EducationData } from "./EducationData";
