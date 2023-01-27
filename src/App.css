@@ -7,7 +7,8 @@
   -ms-user-select: none;
   user-select: none;
   font-family:'Times New Roman';
-  top: 0;
   
- 
+}
+body{
+  background-color:#026773;
 }

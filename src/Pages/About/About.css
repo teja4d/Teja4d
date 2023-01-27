@@ -1,24 +1,18 @@
 .about-container{
-  
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    margin-top: 10%;
-   
-    height:max-content;
+
  }
- .about-wrapper{
+ .cardBorder{
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #024959;
     
-    
-    bottom:0;
-    text-align: center;
-     
-     width: 100vw; 
- }
+  }
  .about-title{
-     
      font-size: 32px;
      color: rgb(28, 85, 241);
      text-align: center;

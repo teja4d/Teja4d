@@ -1,0 +1,94 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-6px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.navBar{
+  background-color: #012E40;
+}
+.icon {
+  animation: bounce 3s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.navLink{
+  margin-top: 5px;
+}
+.icons {
+  animation: move 0.5s linear infinite;
+}
+.navLink a {
+  font-family: "Irish Grover", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 0 1rem;
+  margin-bottom: 2px;
+  margin-right: 1.5rem;
+  padding: 10px;
+  white-space: nowrap;
+}
+.navLink a:hover {
+  color: rgb(225, 242, 159);
+  animation: bounce 1s ease-in;
+}
+.navLink1 {
+  color: rgb(22, 193, 110);
+}
+.navLink2 {
+  color: rgb(25, 123, 227);
+}
+.navLink3 {
+  color: rgb(234, 143, 82);
+}
+.navLink4 {
+  color: rgb(226, 107, 237);
+}
+.navLink7 {
+  color: rgb(70, 207, 234);
+}
+.navLink5 {
+  color: rgb(140, 231, 44);
+}
+.navLink6 {
+  color: rgb(223, 126, 159);
+}
+.navLink1 {
+  animation: navLink1 1s ease-in-out;
+}
+.navLink2 {
+  animation: navLink2 1s ease-in-out;
+}
+.navLink3 {
+  animation: navLink3 1s ease-in-out;
+}
+.navLink4 {
+  animation: navLink4 1s ease-in-out;
+}
+.navLink5 {
+  animation: navLink4 1s ease-in-out;
+}
+.navLink6 {
+  animation: navLink6 1s ease-in-out;
+}
+.navLink7 {
+  animation: navLink7 1s ease-in-out;
+}

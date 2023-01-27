@@ -2,17 +2,18 @@ import React,{useEffect} from 'react'
 import Profilecard from '../../components/Profilecard/Profilecard'
 import { ProjectData } from './ProjectData';
 import Headertext from '../../components/Headertext/Headertext';
+import { Container } from 'react-bootstrap';
 export default function Projects() {
     useEffect(() => {
         window.scrollTo(0, 0)
       }, [])
     
     return (
-      <div style={{marginTop:'5%'}}>
-        <Headertext color="White" align="center" size={48}>Skills</Headertext>
-        <div style={{display:'flex',alignItems:'center',justifyContent:'center',background:'black'}}>
+      <div>
+        <Headertext color="White" align="center" size={48}>Projects</Headertext>
+        <Container style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
           
-          <div style={{width:'100vw',height:'100vh',marginTop:'60px'}}>
+          <div>
           
            <div style={{display:'flex',gap:'6px',flexWrap:'wrap',justifyContent:'center'}}>
              
@@ -24,7 +25,7 @@ export default function Projects() {
            </div>
            </div>
           
-        </div>
+        </Container>
         </div>
     )
 }

@@ -3,7 +3,7 @@ import DeviceDetector from "device-detector-js";
 
 import "./AboutYou.css";
 import Headertext from "../../components/Headertext/Headertext";
-import loading from '../../assets/loading.gif'
+import { Container, Spinner } from "react-bootstrap";
 
 
 
@@ -52,13 +52,14 @@ export default function AboutYou({ itemClicked }) {
   //const paddingValue = window.innerWidth > 480 ? "32px 300px" : "90px 20px";
 
   return (
-    <div className="aboutyou-container">
-      {fetchData ? 
-      <div className="aboutyou-wrapper" onClick={itemClicked}>
+    <Container className="text-center">
+      <div  onClick={itemClicked}>
         <Headertext color="white" size={42}>
           About You
         </Headertext>
         <div className="aboutyou-text">
+        {fetchData ? (
+          <>
           <p>
             Hi! visitor, You seem to be accessing my website from the ip address
             📡 <span>{userData.ip}</span>, your internet service provider is{" "}
@@ -112,8 +113,11 @@ export default function AboutYou({ itemClicked }) {
             Your browser/device is set to&nbsp;
             <span>{isDark ? "dark🌚" : "light🌞"} mode</span>&nbsp;
           </p>
+          </>
+
+        ) :<Spinner animation="border" variant="info" />}
         </div>
-      </div>:<div style={{height:'100vh',width:'100vw',display:'flex',justifyContent:'center',alignItems:'center'}}><img src={loading} alt='no view' style={{width:'300px',height:'300px',borderRadius:'50%'}}></img></div>}
-    </div>
+      </div>
+    </Container>
   );
 }

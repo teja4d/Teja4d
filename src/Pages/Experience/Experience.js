@@ -1,15 +1,19 @@
-import React, {useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { ExperienceData } from "./ExperienceData";
 import Headertext from "../../components/Headertext/Headertext";
 import { IconContext } from "react-icons";
+import "./Experience.css";
 import {
   IoIosArrowDropdownCircle,
   IoIosArrowDropupCircle,
 } from "react-icons/io";
+import { Button, Container } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 export default function Experience({ itemClicked }) {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   const desktop = {
     size1: "32px",
@@ -42,38 +46,27 @@ export default function Experience({ itemClicked }) {
     textAlign: "center",
     alignItems: "center",
     textAlign2: "center",
-  };  
+  };
 
   const size = window.innerWidth > 480 ? desktop : mobile;
 
   return (
-    <div style={{ background: "black" ,marginTop:'5%' }} onClick={itemClicked}>
-      <Headertext align="center" color="Yellow" size="48">
+    <div>
+      <Headertext align="center" color="#F2E3D5" size="48">
         Work Experience
       </Headertext>
 
-      <div
+      <Container
         style={{
-          minHeight: "100vh",
           textAlign: "center",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
         }}
       >
-        <div style={{ width: "100vw" }}>
+        <div>
           {ExperienceData.map((data) => (
-            <div
-              key={data.id}
-              style={{
-                background: "rgb(20,22,30)",
-                maxWidth: "100%",
-                height: size.divWidth,
-                borderRadius: "18px",
-                padding: "20px",
-                margin: "24px",
-              }}
-            >
+            <div key={data.id} className="exBorder">
               <div
                 style={{
                   display: size.display,
@@ -94,7 +87,7 @@ export default function Experience({ itemClicked }) {
                   }}
                 >
                   <img
-                  alt='no view'
+                    alt="no view"
                     style={{
                       height: `${size.logoHeight}px`,
                       width: size.logoWidth,
@@ -107,16 +100,19 @@ export default function Experience({ itemClicked }) {
                     src={data.logo}
                   ></img>
 
-                  <div style={{lineHeight:'12px'}}>
-                    <h1
-                      style={{
-                        fontSize: size.size1,
-                        color: "#3361ea",
-                        textAlign: size.textAlign2,
-                      }}
-                    >
-                      {data.company}
-                    </h1>
+                  <div>
+                      <h1
+                        style={{
+                          fontSize: size.size1,
+                          color: "#FF6500",
+                          textAlign: size.textAlign2,
+                        }}
+                      >
+                        {data.company}
+                      </h1>
+                        <p className="h6 text-info">
+                          {data.date}
+                        </p>
                     <p
                       style={{
                         textAlign: size.textAlign2,
@@ -135,36 +131,39 @@ export default function Experience({ itemClicked }) {
                     >
                       {data.role}
                     </h2>
-                    <h3
-                      style={{
-                        textAlign: size.textAlign2,
-                        fontSize: size.size3,
-                        color: "#e54103",
-                      }}
-                    >
-                      {data.technologies}
-                    </h3>
+                    <div className="d-flex">
+                      {data.technologies.map((x) => (
+                        <Button
+                         key={x}
+                          size="sm"
+                          variant="outline-info"
+                          className=" mx-1"
+                          style={{
+                            textAlign: size.textAlign2,
+                            fontSize: size.size3,
+                            color: "light",
+                            whiteSpace: "nowrap",
+                          }}
+                        >
+                          {x}
+                        </Button>
+                      ))}
+                    </div>
                   </div>
                 </div>
-                <div style={{ lineHeight: "3px", textAlign: "center" }}>
-                  <h3 style={{ color: "red", fontSize: size.size2 }}>
-                    {data.date}
-                  </h3>
-                </div>
               </div>
-               <Accordian >{data.summury} <a style={{textDecoration:'none',color:'red'}} href={data.website}>Please refer this website for more details {data.website}</a></Accordian> 
-              <div className="opener">
-               
-              </div>
+              <Accordian data={data.summury}></Accordian>
+              <div className="opener"></div>
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </div>
   );
 }
 
 const Accordian = (props) => {
+  const { data } = props;
   const [height, maxHeight] = useState(false);
   let icon = height ? <IoIosArrowDropupCircle /> : <IoIosArrowDropdownCircle />;
   const openContent = () => {
@@ -173,22 +172,39 @@ const Accordian = (props) => {
 
   return (
     <div>
-      <p
-        className="paragraph"
-        style={{ maxHeight: height ? "100vh" : "0", color: "yellow",overflow: "hidden",
-        transition: "all 0.4s ease" }}
-      >
-        {props.children}
-      </p>
-      <IconContext.Provider value={{ color: "rgb(2, 200, 4)" }}>
-                  <i
-                    className="opener-icon"
-                    style={{ fontSize: "32px" }}
-                    onClick={openContent}
-                  >
-                    {icon}
-                  </i>
-        </IconContext.Provider>
+      {height && (
+        <div>
+          {data.map((x) => (
+            <>
+              <p
+                className="paragraph text-start px-3"
+                style={{
+                  maxHeight: height ? "100vh" : "0",
+                  color: "white",
+                  overflow: "hidden",
+                }}
+              >
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  size="sm"
+                ></FontAwesomeIcon>
+                &nbsp;
+                {x}
+              </p>
+              <hr></hr>
+            </>
+          ))}
+        </div>
+      )}
+      <IconContext.Provider value={{ color: "#F2E3D5" }}>
+        <i
+          className="opener-icon"
+          style={{ fontSize: "32px" }}
+          onClick={openContent}
+        >
+          {icon}
+        </i>
+      </IconContext.Provider>
     </div>
   );
 };

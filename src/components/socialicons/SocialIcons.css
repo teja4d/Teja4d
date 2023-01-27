@@ -23,11 +23,17 @@
 
 
 .list-items:hover{
-    background: #78d170;
-    box-shadow: 0 0 5px #78d170,0 0 25px #78d170,0 0 25px #78d170,0 0 5px #78d170;
+    background: #232323;
+    box-shadow: 0 0 5px #1d1d1f,0 0 25px #212020,0 0 25px #171917,0 0 5px #0e110e;
     transform: scale(1.1);
 }
 
 .icon-wrapper{
     margin-top: 15px;
+}
+.outlineIcon{
+    
+}
+.outlineIcon:hover{
+    border-color:#3CA6A6;
 }

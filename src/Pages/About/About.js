@@ -1,6 +1,7 @@
 import React,{useEffect} from "react";
 import Headertext from "../../components/Headertext/Headertext";
 import "./About.css";
+import { Container } from "react-bootstrap";
 export default function About({ itemClicked }) {
   //const paddingValue = window.innerWidth > 480 ? "32px 300px" : "90px 20px";
 
@@ -10,12 +11,14 @@ export default function About({ itemClicked }) {
 
   //style={{padding:`${paddingValue}`}}
   return (
-    <div>
-    <div className="about-container">
-      <div onClick={itemClicked} className="about-wrapper">
-        <Headertext color="White" size={42}>
+    <Container className="text-center">
+    <Headertext color="White" size={42}>
           About Me
         </Headertext>
+    
+    <div className="cardBorder">
+    <div className="about-container">
+      <div onClick={itemClicked} className="about-wrapper">
         <div className="about-text">
           <p>
             Teja loves when someone call him <span>Teja4D</span>.
@@ -41,5 +44,6 @@ export default function About({ itemClicked }) {
       </div>
     </div>
     </div>
+    </Container>
   );
 }

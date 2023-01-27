@@ -4,6 +4,7 @@ import Headertext from "../../components/Headertext/Headertext";
 //import Contentbox from '../components/contentbox/Contentbox';
 
 import { EducationData } from "./EducationData";
+import { Container } from "react-bootstrap";
 export default function Education({ itemClicked, align }) {
 
   useEffect(() => {
@@ -47,7 +48,7 @@ export default function Education({ itemClicked, align }) {
   const size = window.innerWidth>480 ?desktop:mobile
 
   return (
-    <div style={{ background: "black",marginTop:'5%' }} onClick={itemClicked}>
+    <Container onClick={itemClicked}>
       <Headertext align="center" color="White" size="48">
         Education
       </Headertext>
@@ -61,21 +62,20 @@ export default function Education({ itemClicked, align }) {
           justifyContent: "center",
         }}
       >
-        <div style={{ width: "100vw", height: "100%" }}>
+        <Container >
           {EducationData.map((data, index) => (
             <div
               key={index}
               style={{
-                background: "rgb(20,22,30)",
-                maxWidth: "100%",
-                height: size.divWidth,
-                borderRadius: "18px",
+                background: "#024959",
+                height: "100%",
+                borderRadius: "8px",
                 padding: "20px",
                 margin: "24px",
               }}
             >
               <div
-              style={{
+                style={{
                 display:size.display,
                 justifyContent:size.justifyContent,
                 gap: size.gap1,
@@ -131,8 +131,8 @@ export default function Education({ itemClicked, align }) {
               </div>
             </div>
           ))}
-        </div>
+        </Container>
       </div>
-    </div>
+    </Container>
   );
 }

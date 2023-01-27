@@ -6,10 +6,15 @@
     align-items:center;
 }
 .skill-container{
-    margin-top: 5%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     
 }
+.homeBorder{
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #024959;
+  }

@@ -11,7 +11,7 @@ export default function Headertext(props) {
 }
 
 const  Header = styled.h1`
-    color:${props=>props.color || "#3361ea"} ;
+    color:#F2E3D5 ;
     font-size:${props=>props.size ||32 }px;
     margin:0;
     text-align:${props=>props.align};
