@@ -12,10 +12,10 @@ function NavBar() {
           <Navbar.Brand href="">
           <img className='icon' src={logo} alt="Logo" width={120} />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav"  />
            {/* add navbar items */}
-           <Navbar.Collapse id="basic-navbar-nav" className='d-flex justify-content-end'>
-           <Nav className='navLink '>
+           <Navbar.Collapse id="basic-navbar-nav" >
+           <Nav className='navLink mr-xl-4'>
             <Link className="navLink1" to="/home"> Home</Link>
             <Link className="navLink2" to="/aboutme"> About Me</Link>
             <Link className="navLink6" to="/experience">Experience</Link>

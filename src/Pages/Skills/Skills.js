@@ -15,7 +15,7 @@ export default function Skills({itemClicked}) {
         <Container className='skill-container'>
         <div >
         <Headertext color="White" size={48}>Skills</Headertext>
-        <div className='d-flex'>
+        <div className='d-flex flex-wrap'>
         {SkillsData.map((data,index)=>(
             <Container key={index} className='homeBorder'>
             <Headertext color="green">{data.category}</Headertext>

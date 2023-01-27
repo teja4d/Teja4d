@@ -7,7 +7,7 @@ import {
   IoIosArrowDropdownCircle,
   IoIosArrowDropupCircle,
 } from "react-icons/io";
-import { Button, Container } from "react-bootstrap";
+import { Button, Card, Container } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 export default function Experience({ itemClicked }) {
@@ -66,7 +66,7 @@ export default function Experience({ itemClicked }) {
       >
         <div>
           {ExperienceData.map((data) => (
-            <div key={data.id} className="exBorder">
+            <Card key={data.id} className="exBorder">
               <div
                 style={{
                   display: size.display,
@@ -131,13 +131,13 @@ export default function Experience({ itemClicked }) {
                     >
                       {data.role}
                     </h2>
-                    <div className="d-flex">
+                    <div className="d-flex flex-wrap">
                       {data.technologies.map((x) => (
                         <Button
                          key={x}
                           size="sm"
                           variant="outline-info"
-                          className=" mx-1"
+                          className=" mx-1 my-1"
                           style={{
                             textAlign: size.textAlign2,
                             fontSize: size.size3,
@@ -154,7 +154,7 @@ export default function Experience({ itemClicked }) {
               </div>
               <Accordian data={data.summury}></Accordian>
               <div className="opener"></div>
-            </div>
+            </Card>
           ))}
         </div>
       </Container>
