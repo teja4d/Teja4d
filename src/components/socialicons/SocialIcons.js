@@ -36,7 +36,7 @@ export default function SocialIcons() {
       <div className="icon-wrapper">
         {[...icons].map((icon, index) => (
           <Button className="mx-2 outlineIcon" size="sm" variant="default">
-            <a key={index} href={icon.url} style={{color:'inherit'}}>
+            <a key={index} href={icon.url} style={{color:'inherit'}} target="_blank" rel="noreferrer">
               <h4
                 className="text-info"
                 onClick={IconClicked}
