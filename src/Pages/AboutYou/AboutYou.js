@@ -41,10 +41,6 @@ export default function AboutYou({ itemClicked }) {
   if (device.device.brand !== "Apple" && device.device.model !== "iPhone") {
     navigator.getBattery().then((data) => setBattery(data));
   }
-
-  console.log(device);
-  //const paddingValue = window.innerWidth > 480 ? "32px 300px" : "90px 20px";
-
   return (
     <Container className="text-center">
       <div onClick={itemClicked}>

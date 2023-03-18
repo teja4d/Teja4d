@@ -2,8 +2,12 @@ import React, { useEffect } from "react";
 import {BsPersonCircle} from 'react-icons/bs'
 import "./About.css";
 import { Container } from "react-bootstrap";
+import * as amplitude from '@amplitude/analytics-browser';
 export default function About({ itemClicked }) {
-  //const paddingValue = window.innerWidth > 480 ? "32px 300px" : "90px 20px";
+  useEffect(()=>{
+    amplitude.init('5734fc9b953c896c16598e37c28d94e1');
+    amplitude.track('Button Clicked');
+  })
 
   useEffect(() => {
     window.scrollTo(0, 0);

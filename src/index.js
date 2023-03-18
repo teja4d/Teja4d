@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import * as amplitude from '@amplitude/analytics-browser';
+
+amplitude.init('5734fc9b953c896c16598e37c28d94e1',);
+
 
 ReactDOM.render(
   <React.StrictMode>

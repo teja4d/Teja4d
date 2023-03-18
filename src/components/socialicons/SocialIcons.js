@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import "./SocialIcons.css";
 import { Button } from "react-bootstrap";
+import { trackAmplitude } from "../Navbar/Navbar";
 export default function SocialIcons() {
   const icons = [
     {
@@ -26,9 +27,10 @@ export default function SocialIcons() {
       url: "https://twitter.com/teja4d",
     },
   ];
-  const IconClicked = () => {
+  const IconClicked = (item1,item2) => {
     if (navigator.vibrate) {
       navigator.vibrate(20);
+      trackAmplitude(item1,item2)
     }
   };
   return (
@@ -39,7 +41,7 @@ export default function SocialIcons() {
             <a key={index} href={icon.url} style={{color:'inherit'}} target="_blank" rel="noreferrer">
               <h4
                 className="text-info"
-                onClick={IconClicked}
+                onClick={()=>IconClicked('Socila Links',icon.url)}
               >{icon.icon}</h4>
             </a>
           </Button>

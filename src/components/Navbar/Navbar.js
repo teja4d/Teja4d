@@ -4,6 +4,16 @@ import logo from '../../assets/TEJA4D.svg';
 import {Link } from 'react-router-dom';
 import './Navbar.css';
 import { Nav } from 'react-bootstrap';
+import { track } from '@amplitude/analytics-browser';
+
+export const trackAmplitude = (item1,item2)=>{
+
+  track('Navbar Clicked', 
+  {buttonName: item2,
+   url:'/'+item1
+  });
+}
+
 function NavBar() {
   return (
     <>
@@ -16,13 +26,13 @@ function NavBar() {
            {/* add navbar items */}
            <Navbar.Collapse id="basic-navbar-nav" >
            <Nav className='navLink mr-xl-4'>
-            <Link className="navLink1" to="/home"> Home</Link>
-            <Link className="navLink2" to="/aboutme"> About Me</Link>
-            <Link className="navLink6" to="/experience">Experience</Link>
-            <Link className="navLink7" to="/skills">Skills</Link>
-            <Link className="navLink3" to="/projects">Projects</Link>
-            <Link className="navLink4" to="/education">Education</Link>
-            <Link className="navLink5" to="/aboutyou">Something about you ?</Link>
+            <Link className="navLink1" to="/home" onClick={()=>trackAmplitude('home','Home')} > Home</Link>
+            <Link className="navLink2" to="/aboutme" onClick={()=>trackAmplitude('aboutme','About Me')}> About Me</Link>
+            <Link className="navLink6" to="/experience" onClick={()=>trackAmplitude('experience','Experience')}>Experience</Link>
+            <Link className="navLink7" to="/skills" onClick={()=>trackAmplitude('skills','Skills')}>Skills</Link>
+            <Link className="navLink3" to="/projects" onClick={()=>trackAmplitude('projects','Projects')}>Projects</Link>
+            <Link className="navLink4" to="/education" onClick={()=>trackAmplitude('education','Education')}>Education</Link>
+            <Link className="navLink5" to="/aboutyou" onClick={()=>trackAmplitude('aboutyou','Something about you ?')}>Something about you ?</Link>
           </Nav>
            </Navbar.Collapse>
         </Container>
