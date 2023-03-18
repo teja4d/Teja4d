@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.ac615913.chunk.css",
-    "main.js": "/static/js/main.230aff99.chunk.js",
-    "main.js.map": "/static/js/main.230aff99.chunk.js.map",
+    "main.js": "/static/js/main.389a307b.chunk.js",
+    "main.js.map": "/static/js/main.389a307b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ef21427d.js",
     "runtime-main.js.map": "/static/js/runtime-main.ef21427d.js.map",
-    "static/js/2.4ebe9bb2.chunk.js": "/static/js/2.4ebe9bb2.chunk.js",
-    "static/js/2.4ebe9bb2.chunk.js.map": "/static/js/2.4ebe9bb2.chunk.js.map",
+    "static/js/2.c97f1c2f.chunk.js": "/static/js/2.c97f1c2f.chunk.js",
+    "static/js/2.c97f1c2f.chunk.js.map": "/static/js/2.c97f1c2f.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.ac615913.chunk.css.map": "/static/css/main.ac615913.chunk.css.map",
-    "static/js/2.4ebe9bb2.chunk.js.LICENSE.txt": "/static/js/2.4ebe9bb2.chunk.js.LICENSE.txt",
+    "static/js/2.c97f1c2f.chunk.js.LICENSE.txt": "/static/js/2.c97f1c2f.chunk.js.LICENSE.txt",
     "static/media/TEJA4D.9f179762.svg": "/static/media/TEJA4D.9f179762.svg",
     "static/media/azure.00373fe1.webp": "/static/media/azure.00373fe1.webp",
     "static/media/bootstrap.d6541b60.webp": "/static/media/bootstrap.d6541b60.webp",
@@ -41,8 +41,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ef21427d.js",
-    "static/js/2.4ebe9bb2.chunk.js",
+    "static/js/2.c97f1c2f.chunk.js",
     "static/css/main.ac615913.chunk.css",
-    "static/js/main.230aff99.chunk.js"
+    "static/js/main.389a307b.chunk.js"
   ]
 }
