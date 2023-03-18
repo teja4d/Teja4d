@@ -6,6 +6,7 @@ import * as amplitude from '@amplitude/analytics-browser';
 
 amplitude.init('5734fc9b953c896c16598e37c28d94e1',);
 
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
