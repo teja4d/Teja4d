@@ -10,14 +10,6 @@ export default function App() {
 
   return (
     <Router>
-      {/* <AnimatedCursor
-        innerSize={12}
-        outerSize={12}
-        color="247, 73, 51"
-        outerAlpha={0.2}
-        innerScale={0.7}
-        outerScale={3}
-      /> */}
       <NavBar></NavBar>
       <PageRoutes />
     </Router>
