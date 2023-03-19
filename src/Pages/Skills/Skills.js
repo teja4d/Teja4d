@@ -19,12 +19,12 @@ export default function Skills({ itemClicked }) {
         <p className="text-center" style={{ color: "#F2E3D5" }}>
           Skills
         </p>
-        <div className="d-md-flex flex-md-wrap">
+        <div className="d-flex flex-wrap justify-content-center">
           {SkillsData.map((data, index) => (
             <div>
               {data.names.map((name) => (
                <div className="m-2">
-                 <Container key={index} className="homeBorder" style={{width:"16rem"}}>
+                 <Container key={index} className="homeBorder">
                   <div key={name.name} className=" d-flex justify-content-center">
                     <div>
                     <CircleView
