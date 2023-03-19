@@ -39,16 +39,6 @@ export default function About({ itemClicked }) {
                 and analysis software like Ansys. I am also well-versed in Agile
                 development methodologies such as Scrum and Kanban.
               </p>
-              <p>
-                I am a team player and have experience collaborating with
-                cross-functional teams to deliver high-quality software. I am a
-                proactive learner and seek new challenges and opportunities to
-                expand my knowledge and skills.
-              </p>
-              <p>
-                My qualifications, experience, and passion for technology make
-                me a valuable asset to any organization.
-              </p>
               </div>
             </div>
           </div>
