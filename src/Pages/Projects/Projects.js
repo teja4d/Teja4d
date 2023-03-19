@@ -11,9 +11,9 @@ export default function Projects() {
     return (
       <div>
         <h1 className='display-1 text-center' style={{ color: "#F2E3D5" }}><MdPlaylistAddCheck/></h1>
-        <p className="text-center" style={{ color: "#F2E3D5" }}>
+        <h3 className="text-center" style={{ color: "#F2E3D5" }}>
           Projects
-        </p>
+        </h3>
         <Container style={{display:'flex',alignItems:'center',justifyContent:'center'}}>
           
           <div>

@@ -50,9 +50,9 @@ export default function Experience({ itemClicked }) {
         <h1 className="display-1 text-center" style={{ color: "#F2E3D5" }}>
           <MdWorkOutline />
         </h1>
-        <p className="text-center" style={{ color: "#F2E3D5" }}>
+        <h3 className="text-center" style={{ color: "#F2E3D5" }}>
           Experience
-        </p>
+        </h3>
         </div>
       <Container
         style={{

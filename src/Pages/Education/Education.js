@@ -51,9 +51,9 @@ export default function Education({ itemClicked, align }) {
         <FaGraduationCap />
        
       </h1>
-      <p className="text-center" style={{ color: "#F2E3D5" }}>
+      <h3 className="text-center" style={{ color: "#F2E3D5" }}>
       Education
-        </p>
+        </h3>
       
 
       <div

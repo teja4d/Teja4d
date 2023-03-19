@@ -16,9 +16,9 @@ export default function Skills({ itemClicked }) {
           {" "}
           <MdEngineering />
         </h2>
-        <p className="text-center" style={{ color: "#F2E3D5" }}>
+        <h3 className="text-center" style={{ color: "#F2E3D5" }}>
           Skills
-        </p>
+        </h3>
         <div className="d-flex flex-wrap justify-content-center">
           {SkillsData.map((data, index) => (
             <div>

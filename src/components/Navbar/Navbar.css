@@ -122,7 +122,7 @@
   background-color: #28373f;
   color: #fff;
   border-radius: 5px;
-  padding: 4px 10px;
+  padding: 2px 8px;
 }
 .navBarMobile a{
   font-size: 20px !important;
@@ -135,6 +135,5 @@
     color: #fff;
     border-radius: 5px;
     padding: 2px 8px;
-    
   }
 }
