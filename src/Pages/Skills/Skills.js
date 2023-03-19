@@ -24,7 +24,7 @@ export default function Skills({ itemClicked }) {
             <div>
               {data.names.map((name) => (
                <div className="m-2">
-                 <Container key={index} className="homeBorder">
+                 <Container key={index} className="homeBorder" style={{width:"18rem"}}>
                   <div key={name.name} className=" d-flex justify-content-center">
                     <div>
                     <CircleView
