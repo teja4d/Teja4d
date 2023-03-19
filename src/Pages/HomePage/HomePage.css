@@ -22,7 +22,6 @@
     margin: 10px;
     background-color: #024959;
     position: relative;
-    z-index: 99;
   }
   .content-subtitle{
     z-index: 5;
