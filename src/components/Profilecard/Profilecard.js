@@ -14,7 +14,7 @@ export default function Profilecard(props) {
     "dark",
   ];
   return (
-    <Card style={{ backgroundColor: "rgba(0, 0, 0, 0.5)", width: "18rem" }}>
+    <Card style={{ backgroundColor: "rgba(0, 0, 0, 0.5)", width: "19rem" }}>
       <Card.Header style={{ textAlign: "center", color: "#82ccdd" }}>
         <b>{props.data.title}</b>
       </Card.Header>

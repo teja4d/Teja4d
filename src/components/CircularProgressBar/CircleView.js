@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 import React from 'react'
 
 export default function CircleView(props) {
-    const dia = window.innerWidth > 480 ? props.dia : props.dia*0.70;
+    const dia = window.innerWidth > 480 ? props.dia : props.dia*0.80;
     const thickness = window.innerWidth >480 ? props.thickness : props.thickness*0.5
     return (
          <div style={{position:'relative'}}>
