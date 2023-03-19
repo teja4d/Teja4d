@@ -7,7 +7,6 @@ import {
 } from "react-icons/fa";
 import "./SocialIcons.css";
 import { Button, OverlayTrigger, Tooltip } from "react-bootstrap";
-import { trackAmplitude } from "../Navbar/Navbar";
 export default function SocialIcons() {
   const icons = [
     {
@@ -34,7 +33,6 @@ export default function SocialIcons() {
   const IconClicked = (item1, item2) => {
     if (navigator.vibrate) {
       navigator.vibrate(20);
-      trackAmplitude(item1, item2);
     }
   };
   return (
