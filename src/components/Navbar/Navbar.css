@@ -113,7 +113,7 @@
   z-index: 99;
   display: inline;
 }
-.navBarMobile:active{
+.navBarMobile:active,.navBar:focus{
   background-color:#03141c;
   z-index: 99;
   display: inline;
@@ -126,13 +126,15 @@
 }
 .navBarMobile a{
   font-size: 20px !important;
+  padding: 2px 8px;
 }
 /* //ttouch hover for mobile */
 @media (hover: none) {
-  .nav-link:focus {
+  .nav-link:focus,.nav-link:active {
     background-color: #28373f;
     color: #fff;
     border-radius: 5px;
     padding: 2px 8px;
+    
   }
 }

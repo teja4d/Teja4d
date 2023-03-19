@@ -18,7 +18,7 @@ export default function App() {
       <div className="d-none d-lg-block">
         <NavBar />
       </div>
-      <div className="d-lg-none d-flex justify-content-center">
+      <div className="d-lg-none d-flex justify-content-center mt-2">
       <a href="/#/home">
           <img className='icon' src={logo} alt="Logo" width={120} />
           </a>
