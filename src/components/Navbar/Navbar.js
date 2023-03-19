@@ -17,7 +17,7 @@ function NavBar() {
     <> 
       <Navbar expand="xl" className='navBar'expanded={navbarOpen} >
         <Container className="text-center">
-          <Navbar.Brand href="/home">
+          <Navbar.Brand href="/#/home">
           <img className='icon' src={logo} alt="Logo" width={120} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={closeNav} />
