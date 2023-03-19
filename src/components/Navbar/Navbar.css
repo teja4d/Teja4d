@@ -19,10 +19,6 @@
   background-color:#03141c;
   z-index: 99;
 }
-.icon {
-  animation: bounce 3s linear infinite;
-}
-
 @keyframes move {
   0% {
     transform: translateX(0);
@@ -127,4 +123,16 @@
   color: #fff;
   border-radius: 5px;
   padding: 4px 10px;
+}
+.navBarMobile a{
+  font-size: 20px !important;
+}
+/* //ttouch hover for mobile */
+@media (hover: none) {
+  .nav-link:focus {
+    background-color: #28373f;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 8px;
+  }
 }
