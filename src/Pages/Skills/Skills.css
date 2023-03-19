@@ -15,5 +15,5 @@
 .homeBorder{
     border-radius: 5px;
     padding: 10px;
-    background-color: #024959;
+    background-color: rgba(0, 0, 0, 0.5);
   }

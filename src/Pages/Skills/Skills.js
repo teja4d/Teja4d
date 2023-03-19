@@ -23,7 +23,7 @@ export default function Skills({ itemClicked }) {
           {SkillsData.map((data, index) => (
             <div>
               {data.names.map((name) => (
-               <div className="">
+               <div className="m-2">
                  <Container key={index} className="homeBorder" style={{width:"16rem"}}>
                   <div key={name.name} className=" d-flex justify-content-center">
                     <div>

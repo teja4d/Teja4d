@@ -70,7 +70,8 @@ export default function Education({ itemClicked, align }) {
             <div
               key={index}
               style={{
-                background: "#024959",
+             
+                background: "rgba(0, 0, 0, 0.5)",
                 height: "100%",
                 borderRadius: "8px",
                 padding: "20px",

@@ -9,7 +9,7 @@
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    background-color: #024959;
+    background-color: rgba(0, 0, 0, 0.5);
     
   }
  .about-title{
@@ -20,7 +20,7 @@
  
  .about-text{
      font-size: 18px;
-     color: rgb(126, 208, 213);
+     color: rgb(193, 201, 201);
      text-align:center;
      
  }
@@ -36,4 +36,10 @@
      color: rgb(51, 235, 66);
      font-weight: 900;
      
+ }
+ .about-image{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid rgb(53, 91, 246);
  }
