@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.7db93eda.chunk.css",
-    "main.js": "/static/js/main.f5e128df.chunk.js",
-    "main.js.map": "/static/js/main.f5e128df.chunk.js.map",
+    "main.css": "/static/css/main.612be65a.chunk.css",
+    "main.js": "/static/js/main.36203c76.chunk.js",
+    "main.js.map": "/static/js/main.36203c76.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ef21427d.js",
     "runtime-main.js.map": "/static/js/runtime-main.ef21427d.js.map",
     "static/js/2.bcba3c13.chunk.js": "/static/js/2.bcba3c13.chunk.js",
     "static/js/2.bcba3c13.chunk.js.map": "/static/js/2.bcba3c13.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.7db93eda.chunk.css.map": "/static/css/main.7db93eda.chunk.css.map",
+    "static/css/main.612be65a.chunk.css.map": "/static/css/main.612be65a.chunk.css.map",
     "static/js/2.bcba3c13.chunk.js.LICENSE.txt": "/static/js/2.bcba3c13.chunk.js.LICENSE.txt",
     "static/media/TEJA4D.9f179762.svg": "/static/media/TEJA4D.9f179762.svg",
     "static/media/azure.00373fe1.webp": "/static/media/azure.00373fe1.webp",
@@ -42,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.ef21427d.js",
     "static/js/2.bcba3c13.chunk.js",
-    "static/css/main.7db93eda.chunk.css",
-    "static/js/main.f5e128df.chunk.js"
+    "static/css/main.612be65a.chunk.css",
+    "static/js/main.36203c76.chunk.js"
   ]
 }

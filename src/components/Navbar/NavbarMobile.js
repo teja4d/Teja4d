@@ -22,28 +22,28 @@ function NavbarMobile() {
         }
     };
   return (
-    <Navbar className="navBarMobile" variant="tabs" fixed="bottom" >
+    <Navbar className="navBarMobile" fixed="bottom" >
     <Container >
         <Nav.Item>
-        <NavLink className="navLink2" href="/#/aboutme" onClick={closeNav}> <SiAboutdotme /></NavLink>
+        <NavLink className="navLink2" href="/#/aboutme" > <SiAboutdotme /></NavLink>
         </Nav.Item>
         <Nav.Item>
-        <NavLink className="navLink6" href="/#/experience" onClick={closeNav}><RiSuitcaseLine /></NavLink>
+        <NavLink className="navLink6" href="/#/experience" ><RiSuitcaseLine /></NavLink>
         </Nav.Item>
         <Nav.Item>
-        <NavLink className="navLink7" href="/#/skills" onClick={closeNav}><GiGearStickPattern /></NavLink>
+        <NavLink className="navLink7" href="/#/skills" ><GiGearStickPattern /></NavLink>
         </Nav.Item>
         <Nav.Item>
-        <NavLink className="navLink1" href="/#/home" onClick={closeNav} active ><FaHome /></NavLink>
+        <NavLink className="navLink1" href="/#/home"  active ><FaHome /></NavLink>
         </Nav.Item>
         <Nav.Item> 
-        <NavLink className="navLink3" href="/#/projects" onClick={closeNav}><AiOutlineApartment /></NavLink>
+        <NavLink className="navLink3" href="/#/projects" ><AiOutlineApartment /></NavLink>
         </Nav.Item>
         <Nav.Item>
-        <NavLink className="navLink4" href="/#/education" onClick={closeNav}><FaGraduationCap /></NavLink>
+        <NavLink className="navLink4" href="/#/education" ><FaGraduationCap /></NavLink>
         </Nav.Item>
         <Nav.Item>
-        <NavLink className="navLink5" href="/#/aboutyou" onClick={closeNav}><FaHandSparkles/></NavLink>
+        <NavLink className="navLink5" href="/#/aboutyou" ><FaHandSparkles/></NavLink>
         </Nav.Item>
      
     </Container>

@@ -21,8 +21,9 @@ export default function App() {
       <div className="d-lg-none d-flex justify-content-center mt-2">
       <a href="/#/home">
           <img className='icon' src={logo} alt="Logo" width={120} />
-          </a>
+      </a>
       </div>
+      <div className="line"></div>
       <div className="position-absolute">
       <ParticleComponent> 
       </ParticleComponent>
