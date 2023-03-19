@@ -10,16 +10,17 @@
     {
       "src": "myimage.webp",
       "type": "image/webp",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
-      "src": "myimage.webp",
-      "type": "image/webp",
+      "src": "./myimage.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#053A5C"
 }

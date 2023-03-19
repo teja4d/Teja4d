@@ -4,7 +4,7 @@ import "./Image.css";
 import { Container } from "react-bootstrap";
 export default function Image() {
   return (
-    <Container className="mb-2">
+    <Container >
       <div className="image-box">
       </div>
     </Container>

@@ -12,7 +12,7 @@ export default function HomePage({itemClicked}) {
     window.scrollTo(0, 0)
   }, [])
   return (
-    <Container onClick={itemClicked} className='mt-5 text-center'>
+    <Container onClick={itemClicked} className='text-center homePage'>
       <div className='homeBackground' >
       <Image/>
       <Container className="mt-5">
