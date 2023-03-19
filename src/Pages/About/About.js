@@ -1,27 +1,21 @@
 import React, { useEffect } from "react";
-import {BsPersonCircle} from 'react-icons/bs'
 import "./About.css";
 import { Container } from "react-bootstrap";
-import * as amplitude from '@amplitude/analytics-browser';
+import myimage from "../../assets/myimage.webp";
 export default function About({ itemClicked }) {
-  useEffect(()=>{
-    amplitude.init('5734fc9b953c896c16598e37c28d94e1');
-    amplitude.track('Button Clicked');
-  })
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   //style={{padding:`${paddingValue}`}}
   return (
-    <Container className="text-center">
+    <Container className="text-center mt-2">
       <h1 className="display-1 text-center" style={{ color: "#F2E3D5" }}>
-        <BsPersonCircle />
+        <img src={myimage} className="about-image" alt="alt"></img>
       </h1>
-      <p className="text-center" style={{ color: "#F2E3D5" }}>
+      <h3 className="text-center" style={{ color: "#F2E3D5" }}>
       About me
-        </p>
+        </h3>
 
       <div className="cardBorder">
         <div className="about-container">
@@ -44,20 +38,6 @@ export default function About({ itemClicked }) {
                 subjects and am proficient in CAD software such as Solidworks
                 and analysis software like Ansys. I am also well-versed in Agile
                 development methodologies such as Scrum and Kanban.
-              </p>
-              <p>
-                With my experience in Agile development environments, quick
-                learning abilities and strong analytical and problem-solving
-                skills, I can identify and resolve issues quickly and
-                effectively. I have experience working as part of the core team
-                to build accounting software that helps clients in Book Keeping,
-                invoicing, taxation and other accounting services. Also, I have
-                experience migrating products from Legacy and MVC-based web
-                pages to modern SPA/PWA web application using react and
-                typescript that offers an enhanced user experience. I have
-                implemented reusable react components and custom hooks that
-                significantly reduced the time required for creating upcoming
-                features. I have also done Unit testing of the product.
               </p>
               <p>
                 I am a team player and have experience collaborating with

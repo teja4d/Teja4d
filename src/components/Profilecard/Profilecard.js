@@ -14,40 +14,41 @@ export default function Profilecard(props) {
     "dark",
   ];
   return (
-    <Card style={{ backgroundColor: "#024959", width: "18rem" }}>
-      <Card.Img
-        src={props.data.image}
-        variant="top"
-        alt="no view"
-        width="280px"
-        height="280px"
-      ></Card.Img>
+    <Card style={{ backgroundColor: "rgba(0, 0, 0, 0.5)", width: "18rem" }}>
       <Card.Header style={{ textAlign: "center", color: "#82ccdd" }}>
-        {props.data.title}
+        <b>{props.data.title}</b>
       </Card.Header>
-      <Card.Body >
-       <div className="d-flex justify-content-center">
-       <p className="text-start mt-2" style={{color:'#b8e994'}}>{props.data.summary}</p>
-       </div>
+      <Card.Body>
         <div className="d-flex justify-content-center">
-        {props.data.code.map((data, index) => (
-          <Badge key={index} bg={colors[Math.floor(Math.random() * 6) + 1]} className="mx-1">
-            {data.tech}
-          </Badge>
-        ))}
+          <p className="text-start mt-2" style={{ color: "#b8e994" }}>
+            {props.data.summary}
+          </p>
         </div>
       </Card.Body>
       <Card.Footer className="text-center">
-        <IconContext.Provider value={{ color: "rgb(247, 203, 181)" }}>
-          <p style={{ fontWeight: "bold" }}>
+        <IconContext.Provider value={{ color: "" }}>
+          <p>
             <a
-             className="text-decoration-none text-secondary"
+              className="text-decoration-none text-light"
               href={props.data.url}
+              target="_blank"
+              rel="noreferrer"
             >
               View Project <FaExternalLinkAlt />
             </a>
           </p>
         </IconContext.Provider>
+        <div className="d-flex justify-content-center">
+          {props.data.code.map((data, index) => (
+            <Badge
+              key={index}
+              bg={colors[Math.floor(Math.random() * 6) + 1]}
+              className="mx-1"
+            >
+              {data.tech}
+            </Badge>
+          ))}
+        </div>
       </Card.Footer>
     </Card>
   );

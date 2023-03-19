@@ -3,50 +3,85 @@ import {
   FaGithub,
   FaLinkedinIn,
   FaTwitterSquare,
-  FaEnvelope
+  FaEnvelope,
 } from "react-icons/fa";
 import "./SocialIcons.css";
-import { Button } from "react-bootstrap";
+import { Button, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { trackAmplitude } from "../Navbar/Navbar";
 export default function SocialIcons() {
   const icons = [
     {
-      icon: <FaEnvelope/>,
+      icon: <FaEnvelope />,
       url: "mailto:teja4d.com@gmail.com?subject=Hello Teja4D&body=I've viewed your website ...",
+      text: "Open Email"
     },
     {
-      icon: <FaLinkedinIn/>,
+      icon: <FaLinkedinIn />,
       url: "https://www.linkedin.com/in/teja4d/",
+      text: "Open LinkedIn"
     },
     {
-      icon: <FaGithub/>,
+      icon: <FaGithub />,
       url: "https://github.com/Teja4d",
+      text: "Open GitHub"
     },
     {
-      icon: <FaTwitterSquare/>,
+      icon: <FaTwitterSquare />,
       url: "https://twitter.com/teja4d",
+      text: "Open Twitter"
     },
   ];
-  const IconClicked = (item1,item2) => {
+  const IconClicked = (item1, item2) => {
     if (navigator.vibrate) {
       navigator.vibrate(20);
-      trackAmplitude(item1,item2)
+      trackAmplitude(item1, item2);
     }
   };
   return (
-    <div className="icon-container mb-4">
-      <div className="icon-wrapper">
-        {[...icons].map((icon, index) => (
-          <Button className="mx-2 outlineIcon" size="sm" variant="default">
-            <a key={index} href={icon.url} style={{color:'inherit'}} target="_blank" rel="noreferrer">
-              <h4
-                className="text-info"
-                onClick={()=>IconClicked('Socila Links',icon.url)}
-              >{icon.icon}</h4>
-            </a>
-          </Button>
+    <div className="icon-container mt-2">
+      <span className="icon-wrapper">
+        {[...icons].map((icon) => (
+          <>
+            <TooltipComponent
+              icon={icon}
+              key={icon.name}
+              IconClicked={IconClicked}
+            />
+          </>
         ))}
-      </div>
+      </span>
     </div>
+  );
+}
+
+function TooltipComponent({ icon, IconClicked }) {
+  const renderTooltip = (props) => (
+    <Tooltip id="button-tooltip" {...props}>
+      {icon.text}
+    </Tooltip>
+  );
+
+  return (
+    <OverlayTrigger
+      placement="top"
+      delay={{ show: 250, hide: 300 }}
+      overlay={renderTooltip}
+    >
+      <Button className="mx-2 outlineIcon" size="sm" variant="default">
+        <a
+          href={icon.url}
+          style={{ color: "inherit" }}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <h4
+            className="text-info"
+            onClick={() => IconClicked("Socila Links", icon.url)}
+          >
+            {icon.icon}
+          </h4>
+        </a>
+      </Button> 
+    </OverlayTrigger>
   );
 }

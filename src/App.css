@@ -11,5 +11,10 @@
   
 }
 body{
-  background-color:#026773;
+  background-image: url(../src/assets/background.jpeg);
+}
+
+.partciles{
+  background: url('https://particles.js.org/images/background3.jpg');
+  background-position:cover;
 }

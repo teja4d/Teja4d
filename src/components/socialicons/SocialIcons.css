@@ -29,11 +29,14 @@
 }
 
 .icon-wrapper{
-    margin-top: 15px;
-}
-.outlineIcon{
-    
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 14px;
+
 }
 .outlineIcon:hover{
     border-color:#3CA6A6;
+}
+.icon-container{
+    z-index: 99;
+    position: relative;
 }

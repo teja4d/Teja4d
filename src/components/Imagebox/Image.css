@@ -1,8 +1,4 @@
 
-.image-container{
-    padding-top:48px;
-    overflow: hidden;
-}
 
 .image-box{
     width:240px;
@@ -12,11 +8,10 @@
     display: flex;
     justify-content: center;
     background: rgba(0,0,0,0.5);
-    border-radius: 35%;
+    border-radius: 3%;
     transform: rotate(45deg);
     margin: 0 auto;
-   
-    
+    border: 5px solid rgb(186, 183, 183);
 }
 .image-box::before{
 content:'';
@@ -39,6 +34,7 @@ rgba(255, 0, 0, 1) 100%);
 animation: animate 5s linear infinite;
 
 }
+
 .image-box::after{
     content: "";
     position: absolute;
@@ -48,7 +44,7 @@ animation: animate 5s linear infinite;
     background-repeat: no-repeat;
     text-align: center;
     transform: rotate(-45deg);
-    border-radius: 55%;
+    border:2px solid white
 }
 @keyframes animate{
     0%{

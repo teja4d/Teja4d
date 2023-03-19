@@ -7,17 +7,27 @@ import {Container } from 'react-bootstrap';
 
 
 export default function HomePage({itemClicked}) {
+  let name ="I'm DharmaTeja Vytla";
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
   return (
     <Container onClick={itemClicked} className='mt-5 text-center'>
-      <div className='homeBorder' >
+      <div className='homeBackground' >
       <Image/>
-      <h4 className="content-title">--DharmaTeja Vytla--</h4>
-      <h4 className='support-letter'>as</h4>
-      <h4 className='nick-name'>Teja4D</h4>
+      <Container className="mt-5">
+      <div>
+      <span>
+      {[...name].map(x=>(
+      <span className="display-2 display-md-4 content-title" style={{color:`hsl(${Math.floor(Math.random()*360)},100%,50%)`}}>{x}</span>
+      ))}
+      </span>
+      <h3 className="content-subtitle">
+        Full Stack Developer
+      </h3>
+      </div>
       <SocialIcons/>
+      </Container>
       </div>
       </Container>
   );
