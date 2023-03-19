@@ -72,12 +72,12 @@ function TooltipComponent({ icon, IconClicked }) {
           target="_blank"
           rel="noreferrer"
         >
-          <h4
-            className="text-info"
+          <p
+            className="h5"
             onClick={() => IconClicked("Socila Links", icon.url)}
           >
             {icon.icon}
-          </h4>
+          </p>
         </a>
       </Button> 
     </OverlayTrigger>

@@ -23,12 +23,14 @@ export default function App() {
           <img className='icon' src={logo} alt="Logo" width={120} />
       </a>
       </div>
+      <div className="d-lg-none">
       <div className="line"></div>
+      </div>
       <div className="position-absolute">
       <ParticleComponent> 
       </ParticleComponent>
       </div>
-      <PageRoutes />
+      <PageRoutes /> 
       {/* if screen size is tab or movile show navmobile*/}
       <div className="d-lg-none">
         <NavbarMobile />
