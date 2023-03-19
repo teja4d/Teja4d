@@ -21,6 +21,10 @@
     padding: 10px;
     margin: 10px;
     background-color: #024959;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .content-subtitle{
     z-index: 5;
