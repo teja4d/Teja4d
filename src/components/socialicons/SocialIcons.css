@@ -28,13 +28,15 @@
     transform: scale(1.1);
 }
 
-.icon-wrapper{
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 14px;
-
-}
 .outlineIcon:hover{
-    border-color:#3CA6A6;
+    background-color: rgb(90, 224, 188);
+}
+.outlineIcon{
+    border: 1.5px solid  rgb(90, 224, 188);
+    border-radius: 50%;
+    transition: 0.4s ease-in-out;
+    -webkit-tap-highlight-color: transparent;
+    color: rgb(90, 224, 188);
 }
 .icon-container{
     z-index: 99;
