@@ -17,6 +17,7 @@
 }
 .navBar{
   background-color:#03141c;
+  z-index: 99;
 }
 .icon {
   animation: bounce 3s linear infinite;
