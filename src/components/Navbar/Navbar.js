@@ -10,7 +10,10 @@ function NavBar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   //close navbar when clicked in mobile view
   const closeNav = () => {
-    setNavbarOpen(!navbarOpen);
+   //excute in mobile view
+    if (window.innerWidth <= 1024) {
+      setNavbarOpen(!navbarOpen);
+    }
   };
 
   return (
