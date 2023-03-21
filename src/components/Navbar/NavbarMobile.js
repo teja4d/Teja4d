@@ -28,7 +28,7 @@ function NavbarMobile() {
         <NavLink className="navLink7" href="/#/skills" onClick={closeNav}><GiGearStickPattern /></NavLink>
         </Nav.Item>
         <Nav.Item>
-        <NavLink className="navLink1" href="/#/home" onClick={closeNav} active >
+        <NavLink className="navLink1" href="/#/home" onClick={closeNav} defaultChecked >
         <img src={myimage} className="about-image" alt="alt"></img>
         </NavLink>
         </Nav.Item>
