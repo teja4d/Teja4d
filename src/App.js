@@ -15,7 +15,7 @@ export default function App() {
   return (
     <Router>
       {/* //if scree size is laptop show navbar */}
-      <div className="d-none d-lg-block">
+      <div className="d-none d-lg-block ">
         <NavBar />
       </div>
       <div className="d-lg-none d-flex justify-content-center mt-2">
@@ -32,7 +32,7 @@ export default function App() {
       </div>
       <PageRoutes /> 
       {/* if screen size is tab or movile show navmobile*/}
-      <div className="d-lg-none">
+      <div className="d-lg-none homeContainer">
         <NavbarMobile />
       </div>
     </Router>
