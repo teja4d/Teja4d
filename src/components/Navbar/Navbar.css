@@ -125,7 +125,7 @@
   padding: 2px 8px;
 }
 .navBarMobile a{
-  font-size: 20px !important;
+  font-size: 24px !important;
   padding: 2px 8px;
 }
 /* //ttouch hover for mobile */
@@ -136,4 +136,10 @@
     border-radius: 5px;
     padding: 2px 8px;
   }
+} 
+.about-image{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid rgb(53, 91, 246);
 }
