@@ -33,7 +33,6 @@
 }
 .outlineIcon{
     border: 1.5px solid  rgb(90, 224, 188);
-    border-radius: 50%;
     transition: 0.4s ease-in-out;
     -webkit-tap-highlight-color: transparent;
     color: rgb(90, 224, 188);

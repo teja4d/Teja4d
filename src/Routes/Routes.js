@@ -1,6 +1,5 @@
 import React from 'react';
-import {Routes,Route} from 'react-router-dom'
-import About from '../Pages/About/About';
+import {Routes,Route} from 'react-router-dom';
 import Education from '../Pages/Education/Education';
 import Experience from '../Pages/Experience/Experience';
 import AboutYou from '../Pages/AboutYou/AboutYou';
@@ -13,7 +12,6 @@ export default function PageRoutes({clickedOutside}) {
     <Routes>
      <Route path='/' element={<HomePage  itemClicked={clickedOutside}/>} />
       <Route path='/home' element={<HomePage itemClicked={clickedOutside}/>} />
-      <Route path='/aboutme'  element={<About itemClicked={clickedOutside}/>}></Route>
       <Route path='education' element={<Education itemClicked={clickedOutside}/>}></Route>
       <Route path='experience' element={<Experience itemClicked={clickedOutside}/>}></Route>
       <Route path='skills' element={<Skills itemClicked={clickedOutside}/>}></Route>

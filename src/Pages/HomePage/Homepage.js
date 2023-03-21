@@ -33,6 +33,15 @@ export default function HomePage({itemClicked}) {
       </p>
       </div>
       <SocialIcons/>
+      <div className="p-3 my-4 text-white border border-1">
+                <p>
+                  I'm a self motivated software engineer with a keen
+                  interest in fintech.I'm on
+                  the lookout for an exciting opportunity to channel my skills
+                  and experience towards the success of a technology-driven
+                  company. Let's build something amazing together!.
+                </p>
+              </div>
       </Container>
       </div>
       </Container>
