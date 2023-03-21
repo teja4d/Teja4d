@@ -12,8 +12,13 @@
 }
 body{
   background-image: url(../src/assets/background.jpeg);
+  height: 100%;
+  position: relative;
+  overflow: scroll;
 }
-
+html{
+  height: 100%;
+}
 .partciles{
   background: url('https://particles.js.org/images/background3.jpg');
   background-position:cover;
@@ -24,4 +29,7 @@ body{
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.homeContainer{
+  padding-top: 80px;
 }

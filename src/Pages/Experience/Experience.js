@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { ExperienceData } from "./ExperienceData";
 import "./Experience.css";
-import {FaHandPointRight} from 'react-icons/fa'
-import { MdWorkOutline ,MdOutlineExpandMore,MdOutlineExpandLess} from "react-icons/md";
+import { FaHandPointRight } from "react-icons/fa";
+import {
+  MdWorkOutline,
+  MdOutlineExpandMore,
+  MdOutlineExpandLess,
+} from "react-icons/md";
 import { Button, Card, Container } from "react-bootstrap";
 export default function Experience({ itemClicked }) {
   useEffect(() => {
@@ -45,15 +49,15 @@ export default function Experience({ itemClicked }) {
   const size = window.innerWidth > 480 ? desktop : mobile;
 
   return (
-    <div>
-        <div >
+    <>
+      <div>
         <h1 className="display-1 text-center" style={{ color: "#F2E3D5" }}>
           <MdWorkOutline />
         </h1>
         <h3 className="text-center" style={{ color: "#F2E3D5" }}>
           Experience
         </h3>
-        </div>
+      </div>
       <Container
         style={{
           textAlign: "center",
@@ -62,7 +66,7 @@ export default function Experience({ itemClicked }) {
           justifyContent: "center",
         }}
       >
-        <div>
+        <Container>
           {ExperienceData.map((data) => (
             <Card key={data.id} className="exBorder">
               <div
@@ -108,7 +112,9 @@ export default function Experience({ itemClicked }) {
                     >
                       {data.company}
                     </h1>
-                    <p className="h6" style={{color:'#E0F7FA'}}>{data.date}</p>
+                    <p className="h6" style={{ color: "#E0F7FA" }}>
+                      {data.date}
+                    </p>
                     <h2
                       style={{
                         textAlign: size.textAlign2,
@@ -143,9 +149,9 @@ export default function Experience({ itemClicked }) {
               <div className="opener"></div>
             </Card>
           ))}
-        </div>
+        </Container>
       </Container>
-    </div>
+    </>
   );
 }
 
@@ -180,11 +186,8 @@ const Accordian = (props) => {
           ))}
         </div>
       )}
-      <h2 style={{color:'white',cursor:'pointer'}}>
-        <i
-          className="opener-icon"
-          onClick={openContent}
-        >
+      <h2 style={{ color: "white", cursor: "pointer" }}>
+        <i className="opener-icon" onClick={openContent}>
           {icon}
         </i>
       </h2>
