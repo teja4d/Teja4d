@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.37c56c50.chunk.css",
-    "main.js": "/static/js/main.4748b01c.chunk.js",
-    "main.js.map": "/static/js/main.4748b01c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ef21427d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ef21427d.js.map",
-    "static/js/2.e57f132a.chunk.js": "/static/js/2.e57f132a.chunk.js",
-    "static/js/2.e57f132a.chunk.js.map": "/static/js/2.e57f132a.chunk.js.map",
+    "main.css": "/static/css/main.7e8bef9e.chunk.css",
+    "main.js": "/static/js/main.0c6c05db.chunk.js",
+    "main.js.map": "/static/js/main.0c6c05db.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.052d704b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.052d704b.js.map",
+    "static/js/2.05c6587e.chunk.js": "/static/js/2.05c6587e.chunk.js",
+    "static/js/2.05c6587e.chunk.js.map": "/static/js/2.05c6587e.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.37c56c50.chunk.css.map": "/static/css/main.37c56c50.chunk.css.map",
-    "static/js/2.e57f132a.chunk.js.LICENSE.txt": "/static/js/2.e57f132a.chunk.js.LICENSE.txt",
+    "static/css/main.7e8bef9e.chunk.css.map": "/static/css/main.7e8bef9e.chunk.css.map",
+    "static/js/2.05c6587e.chunk.js.LICENSE.txt": "/static/js/2.05c6587e.chunk.js.LICENSE.txt",
     "static/media/TEJA4D.9f179762.svg": "/static/media/TEJA4D.9f179762.svg",
     "static/media/azure.00373fe1.webp": "/static/media/azure.00373fe1.webp",
     "static/media/App.css": "/static/media/background.957d06fe.jpeg",
@@ -40,9 +40,9 @@
     "static/media/wiprologo.457e42df.webp": "/static/media/wiprologo.457e42df.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.ef21427d.js",
-    "static/js/2.e57f132a.chunk.js",
-    "static/css/main.37c56c50.chunk.css",
-    "static/js/main.4748b01c.chunk.js"
+    "static/js/runtime-main.052d704b.js",
+    "static/js/2.05c6587e.chunk.js",
+    "static/css/main.7e8bef9e.chunk.css",
+    "static/js/main.0c6c05db.chunk.js"
   ]
 }
